@@ -26,7 +26,6 @@ const screenshots = {
     outlined: 'screenshots/button-2.png',
     contained: 'screenshots/button-3.png',
     elevated: 'screenshots/button-4.png',
-    'contained-tonal': 'screenshots/button-5.png',
   },
   Card: {
     elevated: 'screenshots/card-1.png',
@@ -85,7 +84,6 @@ const screenshots = {
     default: 'screenshots/icon-button-1.png',
     outlined: 'screenshots/icon-button-4.png',
     contained: 'screenshots/icon-button-2.png',
-    'contained-tonal': 'screenshots/icon-button-3.png',
   },
   'List.Accordion': {
     'with left icon': 'screenshots/list-accordion-1.png',

@@ -243,7 +243,6 @@ const FABGroup = ({
   >(null);
 
   const { scale } = theme.animation;
-  const { isV3 } = theme;
 
   React.useEffect(() => {
     if (open) {
@@ -254,7 +253,7 @@ const FABGroup = ({
           useNativeDriver: true,
         }),
         Animated.stagger(
-          isV3 ? 15 : 50 * scale,
+          15,
           animations.current
             .map((animation) =>
               Animated.timing(animation, {
@@ -282,7 +281,7 @@ const FABGroup = ({
         ),
       ]).start();
     }
-  }, [open, actions, backdrop, scale, isV3]);
+  }, [open, actions, backdrop, scale]);
 
   const close = () => onStateChange({ open: false });
 
@@ -362,7 +361,7 @@ const FABGroup = ({
           {actions.map((it, i) => {
             const labelTextStyle = {
               color: it.labelTextColor ?? labelColor,
-              ...(isV3 ? theme.fonts.titleMedium : {}),
+              ...theme.fonts.titleMedium,
             };
             const marginHorizontal =
               typeof it.size === 'undefined' || it.size === 'small' ? 24 : 16;
@@ -390,7 +389,7 @@ const FABGroup = ({
                 {it.label && (
                   <View>
                     <Card
-                      mode={isV3 ? 'contained' : 'elevated'}
+                      mode="contained"
                       onPress={(e) => {
                         it.onPress(e);
                         close();
@@ -401,14 +400,9 @@ const FABGroup = ({
                       style={[
                         styles.containerStyle,
                         {
-                          transform: [
-                            isV3
-                              ? { translateY: labelTranslations[i] }
-                              : { scale: scales[i] },
-                          ],
+                          transform: [{ translateY: labelTranslations[i] }],
                           opacity: opacities[i],
                         },
-                        isV3 && styles.v3ContainerStyle,
                         it.containerStyle,
                       ]}
                     >
@@ -434,7 +428,7 @@ const FABGroup = ({
                       opacity: opacities[i],
                       backgroundColor: stackedFABBackgroundColor,
                     },
-                    isV3 && { transform: [{ translateY: translations[i] }] },
+                    { transform: [{ translateY: translations[i] }] },
                     it.style,
                   ]}
                   accessibilityElementsHidden={true}
@@ -515,17 +509,13 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     marginVertical: 8,
     marginHorizontal: 16,
-    elevation: 2,
+    backgroundColor: 'transparent',
+    elevation: 0,
   },
   item: {
     marginBottom: 16,
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-  },
-  // eslint-disable-next-line react-native/no-color-literals
-  v3ContainerStyle: {
-    backgroundColor: 'transparent',
-    elevation: 0,
   },
 });

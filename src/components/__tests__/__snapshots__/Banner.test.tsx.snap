@@ -234,7 +234,6 @@ exports[`render visible banner, with custom theme 1`] = `
                               "marginVertical": 9,
                               "textAlign": "center",
                             },
-                            false,
                             {
                               "marginHorizontal": 12,
                             },
@@ -657,7 +656,6 @@ exports[`renders visible banner, with action buttons and with image 1`] = `
                               "marginVertical": 9,
                               "textAlign": "center",
                             },
-                            false,
                             {
                               "marginHorizontal": 12,
                             },
@@ -666,7 +664,7 @@ exports[`renders visible banner, with action buttons and with image 1`] = `
                             },
                             false,
                             {
-                              "color": "rgba(103, 80, 164, 1)",
+                              "color": "rgba(11, 87, 208, 1)",
                               "fontFamily": "System",
                               "fontSize": 14,
                               "fontWeight": "500",
@@ -927,7 +925,6 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
                               "marginVertical": 9,
                               "textAlign": "center",
                             },
-                            false,
                             {
                               "marginHorizontal": 12,
                             },
@@ -936,7 +933,7 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
                             },
                             false,
                             {
-                              "color": "rgba(103, 80, 164, 1)",
+                              "color": "rgba(11, 87, 208, 1)",
                               "fontFamily": "System",
                               "fontSize": 14,
                               "fontWeight": "500",
@@ -1077,7 +1074,6 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
                               "marginVertical": 9,
                               "textAlign": "center",
                             },
-                            false,
                             {
                               "marginHorizontal": 12,
                             },
@@ -1086,7 +1082,7 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
                             },
                             false,
                             {
-                              "color": "rgba(103, 80, 164, 1)",
+                              "color": "rgba(11, 87, 208, 1)",
                               "fontFamily": "System",
                               "fontSize": 14,
                               "fontWeight": "500",

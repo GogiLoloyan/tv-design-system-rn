@@ -10,10 +10,6 @@ const Button = {
       backgroundColor: 'theme.colors.primary',
       color: 'theme.colors.onPrimary',
     },
-    'contained-tonal': {
-      backgroundColor: 'theme.colors.secondaryContainer',
-      color: 'theme.colors.onSecondaryContainer',
-    },
     outlined: {
       color: 'theme.colors.primary',
       borderColor: 'theme.colors.outline',
@@ -28,10 +24,6 @@ const Button = {
       color: 'theme.colors.onSurfaceDisabled',
     },
     contained: {
-      backgroundColor: 'theme.colors.surfaceDisabled',
-      color: 'theme.colors.onSurfaceDisabled',
-    },
-    'contained-tonal': {
       backgroundColor: 'theme.colors.surfaceDisabled',
       color: 'theme.colors.onSurfaceDisabled',
     },

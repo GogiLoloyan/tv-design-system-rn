@@ -24,7 +24,7 @@ exports[`renders colored progress bar 1`] = `
     collapsable={false}
     style={
       {
-        "backgroundColor": "rgba(231, 224, 236, 1)",
+        "backgroundColor": "rgba(225, 227, 225, 1)",
         "height": 4,
         "opacity": 0,
         "overflow": "hidden",
@@ -78,7 +78,7 @@ exports[`renders hidden progress bar 1`] = `
     collapsable={false}
     style={
       {
-        "backgroundColor": "rgba(231, 224, 236, 1)",
+        "backgroundColor": "rgba(225, 227, 225, 1)",
         "height": 4,
         "opacity": 0,
         "overflow": "hidden",
@@ -89,7 +89,7 @@ exports[`renders hidden progress bar 1`] = `
       collapsable={false}
       style={
         {
-          "backgroundColor": "rgba(103, 80, 164, 1)",
+          "backgroundColor": "rgba(11, 87, 208, 1)",
           "flex": 1,
           "transform": [
             {
@@ -126,7 +126,7 @@ exports[`renders indeterminate progress bar 1`] = `
     collapsable={false}
     style={
       {
-        "backgroundColor": "rgba(231, 224, 236, 1)",
+        "backgroundColor": "rgba(225, 227, 225, 1)",
         "height": 4,
         "opacity": 0,
         "overflow": "hidden",
@@ -137,7 +137,7 @@ exports[`renders indeterminate progress bar 1`] = `
       collapsable={false}
       style={
         {
-          "backgroundColor": "rgba(103, 80, 164, 1)",
+          "backgroundColor": "rgba(11, 87, 208, 1)",
           "flex": 1,
           "transform": [
             {
@@ -180,7 +180,7 @@ exports[`renders progress bar with specific progress 1`] = `
     collapsable={false}
     style={
       {
-        "backgroundColor": "rgba(231, 224, 236, 1)",
+        "backgroundColor": "rgba(225, 227, 225, 1)",
         "height": 4,
         "opacity": 0,
         "overflow": "hidden",
@@ -191,7 +191,7 @@ exports[`renders progress bar with specific progress 1`] = `
       collapsable={false}
       style={
         {
-          "backgroundColor": "rgba(103, 80, 164, 1)",
+          "backgroundColor": "rgba(11, 87, 208, 1)",
           "flex": 1,
           "transform": [
             {

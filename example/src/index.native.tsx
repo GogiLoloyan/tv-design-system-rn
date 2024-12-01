@@ -18,9 +18,6 @@ import {
   Provider as PaperProvider,
   MD3DarkTheme,
   MD3LightTheme,
-  MD2DarkTheme,
-  MD2LightTheme,
-  MD2Theme,
   MD3Theme,
   useTheme,
   adaptNavigationTheme,
@@ -47,11 +44,11 @@ export const PreferencesContext = React.createContext<{
   rippleEffectEnabled: boolean;
   collapsed: boolean;
   rtl: boolean;
-  theme: MD2Theme | MD3Theme;
+  theme: MD3Theme;
   shouldUseDeviceColors?: boolean;
 } | null>(null);
 
-export const useExampleTheme = () => useTheme<MD2Theme | MD3Theme>();
+export const useExampleTheme = () => useTheme<MD3Theme>();
 
 const Drawer = createDrawerNavigator<{ Home: undefined }>();
 
@@ -70,7 +67,6 @@ export default function PaperExample() {
   const [shouldUseDeviceColors, setShouldUseDeviceColors] =
     React.useState(true);
   const [isDarkMode, setIsDarkMode] = React.useState(false);
-  const [themeVersion, setThemeVersion] = React.useState<2 | 3>(3);
   const [rtl, setRtl] = React.useState<boolean>(
     I18nManager.getConstants().isRTL
   );
@@ -80,10 +76,6 @@ export default function PaperExample() {
 
   const { theme: mdTheme } = useMaterial3Theme();
   const theme = React.useMemo(() => {
-    if (themeVersion === 2) {
-      return isDarkMode ? MD2DarkTheme : MD2LightTheme;
-    }
-
     if (!deviceColorsSupported || !shouldUseDeviceColors) {
       return isDarkMode ? MD3DarkTheme : MD3LightTheme;
     }
@@ -91,7 +83,7 @@ export default function PaperExample() {
     return isDarkMode
       ? { ...MD3DarkTheme, colors: mdTheme.dark }
       : { ...MD3LightTheme, colors: mdTheme.light };
-  }, [isDarkMode, mdTheme, shouldUseDeviceColors, themeVersion]);
+  }, [isDarkMode, mdTheme, shouldUseDeviceColors]);
 
   React.useEffect(() => {
     const restoreState = async () => {
@@ -168,7 +160,6 @@ export default function PaperExample() {
       toggleThemeVersion: () => {
         setCustomFont(false);
         setCollapsed(false);
-        setThemeVersion((oldThemeVersion) => (oldThemeVersion === 2 ? 3 : 2));
         setRippleEffectEnabled(true);
       },
       customFontLoaded,
@@ -261,7 +252,7 @@ export default function PaperExample() {
                 );
               }}
             </SafeAreaInsetsContext.Consumer>
-            <StatusBar style={!theme.isV3 || theme.dark ? 'light' : 'dark'} />
+            <StatusBar style={theme.dark ? 'light' : 'dark'} />
           </NavigationContainer>
         </React.Fragment>
       </PreferencesContext.Provider>

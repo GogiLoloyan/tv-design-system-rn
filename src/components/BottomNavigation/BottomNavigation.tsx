@@ -26,10 +26,6 @@ export type BaseRoute = {
   focusedIcon?: IconSource;
   unfocusedIcon?: IconSource;
   badge?: string | number | boolean;
-  /**
-   * @deprecated In v5.x works only with theme version 2.
-   */
-  color?: string;
   accessibilityLabel?: string;
   testID?: string;
   lazy?: boolean;
@@ -83,7 +79,6 @@ export type Props<Route extends BaseRoute> = {
    * - `title`: title of the route to use as the tab label
    * - `focusedIcon`:  icon to use as the focused tab icon, can be a string, an image source or a react component @renamed Renamed from 'icon' to 'focusedIcon' in v5.x
    * - `unfocusedIcon`:  icon to use as the unfocused tab icon, can be a string, an image source or a react component @supported Available in v5.x with theme version 3
-   * - `color`: color to use as background color for shifting bottom navigation @deprecatedProperty In v5.x works only with theme version 2.
    * - `badge`: badge to show on the tab icon, can be `true` to show a dot, `string` or `number` to show text.
    * - `accessibilityLabel`: accessibility label for the tab button
    * - `testID`: test id for the tab button
@@ -343,19 +338,16 @@ const BottomNavigation = <Route extends BaseRoute>({
   onTabPress,
   onTabLongPress,
   onIndexChange,
-  shifting: shiftingProp,
+  shifting = false,
   safeAreaInsets,
   labelMaxFontSizeMultiplier = 1,
-  compact: compactProp,
+  compact = false,
   testID = 'bottom-navigation',
   theme: themeOverrides,
   getLazy = ({ route }: { route: Route }) => route.lazy,
 }: Props<Route>) => {
   const theme = useInternalTheme(themeOverrides);
   const { scale } = theme.animation;
-  const compact = compactProp ?? !theme.isV3;
-  let shifting =
-    shiftingProp ?? (theme.isV3 ? false : navigationState.routes.length > 3);
 
   if (shifting && navigationState.routes.length < 2) {
     shifting = false;
@@ -404,7 +396,7 @@ const BottomNavigation = <Route extends BaseRoute>({
         ...navigationState.routes.map((_, i) =>
           Animated.timing(tabsPositionAnims[i], {
             toValue: i === index ? 0 : i >= index ? 1 : -1,
-            duration: theme.isV3 || shifting ? 150 * scale : 0,
+            duration: 150,
             useNativeDriver: true,
             easing: sceneAnimationEasing,
           })

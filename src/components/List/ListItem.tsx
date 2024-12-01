@@ -10,8 +10,6 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import color from 'color';
-
 import { Style, getLeftStyles, getRightStyles } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import type { $RemoveChildren, EllipsizeProp, ThemeProp } from '../../types';
@@ -164,9 +162,6 @@ const ListItem = (
   const onDescriptionTextLayout = (
     event: NativeSyntheticEvent<TextLayoutEventData>
   ) => {
-    if (!theme.isV3) {
-      return;
-    }
     const { nativeEvent } = event;
     setAlignToTop(nativeEvent.lines.length >= 2);
   };
@@ -201,9 +196,7 @@ const ListItem = (
   };
 
   const renderTitle = () => {
-    const titleColor = theme.isV3
-      ? theme.colors.onSurface
-      : color(theme.colors.text).alpha(0.87).rgb().string();
+    const titleColor = theme.colors.onSurface;
 
     return typeof title === 'function' ? (
       title({
@@ -225,32 +218,26 @@ const ListItem = (
     );
   };
 
-  const descriptionColor = theme.isV3
-    ? theme.colors.onSurfaceVariant
-    : color(theme.colors.text).alpha(0.54).rgb().string();
+  const descriptionColor = theme.colors.onSurfaceVariant;
 
   return (
     <TouchableRipple
       {...rest}
       ref={ref}
-      style={[theme.isV3 ? styles.containerV3 : styles.container, style]}
+      style={[styles.container, style]}
       onPress={onPress}
       theme={theme}
       testID={testID}
     >
-      <View style={theme.isV3 ? styles.rowV3 : styles.row}>
+      <View style={styles.row}>
         {left
           ? left({
               color: descriptionColor,
-              style: getLeftStyles(alignToTop, description, theme.isV3),
+              style: getLeftStyles(alignToTop, Boolean(description)),
             })
           : null}
         <View
-          style={[
-            theme.isV3 ? styles.itemV3 : styles.item,
-            styles.content,
-            contentStyle,
-          ]}
+          style={[styles.item, styles.content, contentStyle]}
           testID={`${testID}-content`}
         >
           {renderTitle()}
@@ -262,7 +249,7 @@ const ListItem = (
         {right
           ? right({
               color: descriptionColor,
-              style: getRightStyles(alignToTop, description, theme.isV3),
+              style: getRightStyles(alignToTop, Boolean(description)),
             })
           : null}
       </View>
@@ -275,17 +262,10 @@ Component.displayName = 'List.Item';
 
 const styles = StyleSheet.create({
   container: {
-    padding: 8,
-  },
-  containerV3: {
     paddingVertical: 8,
     paddingRight: 24,
   },
   row: {
-    width: '100%',
-    flexDirection: 'row',
-  },
-  rowV3: {
     width: '100%',
     flexDirection: 'row',
     marginVertical: 6,
@@ -297,10 +277,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   item: {
-    marginVertical: 6,
-    paddingLeft: 8,
-  },
-  itemV3: {
     paddingLeft: 16,
   },
   content: {

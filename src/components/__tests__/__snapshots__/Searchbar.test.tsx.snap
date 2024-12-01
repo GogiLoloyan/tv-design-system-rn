@@ -63,7 +63,7 @@ exports[`activity indicator snapshot test 1`] = `
         style={
           {
             "backgroundColor": "transparent",
-            "borderColor": "rgba(121, 116, 126, 1)",
+            "borderColor": "rgba(116, 119, 117, 1)",
             "borderRadius": 20,
             "borderWidth": 0,
             "elevation": 0,
@@ -151,7 +151,7 @@ exports[`activity indicator snapshot test 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -187,7 +187,7 @@ exports[`activity indicator snapshot test 1`] = `
       placeholder=""
       placeholderTextColor="rgba(28, 27, 31, 1)"
       returnKeyType="search"
-      selectionColor="rgba(103, 80, 164, 1)"
+      selectionColor="rgba(11, 87, 208, 1)"
       style={
         [
           {
@@ -199,7 +199,7 @@ exports[`activity indicator snapshot test 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "rgba(73, 69, 79, 1)",
+            "color": "rgba(68, 71, 70, 1)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -317,7 +317,7 @@ exports[`activity indicator snapshot test 1`] = `
                     collapsable={false}
                     style={
                       {
-                        "borderColor": "rgba(103, 80, 164, 1)",
+                        "borderColor": "rgba(11, 87, 208, 1)",
                         "borderRadius": 12,
                         "borderWidth": 2.4,
                         "height": 24,
@@ -400,7 +400,7 @@ exports[`activity indicator snapshot test 1`] = `
                     collapsable={false}
                     style={
                       {
-                        "borderColor": "rgba(103, 80, 164, 1)",
+                        "borderColor": "rgba(11, 87, 208, 1)",
                         "borderRadius": 12,
                         "borderWidth": 2.4,
                         "height": 24,
@@ -482,7 +482,7 @@ exports[`renders with placeholder 1`] = `
         style={
           {
             "backgroundColor": "transparent",
-            "borderColor": "rgba(121, 116, 126, 1)",
+            "borderColor": "rgba(116, 119, 117, 1)",
             "borderRadius": 20,
             "borderWidth": 0,
             "elevation": 0,
@@ -570,7 +570,7 @@ exports[`renders with placeholder 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -606,7 +606,7 @@ exports[`renders with placeholder 1`] = `
       placeholder="Search"
       placeholderTextColor="rgba(28, 27, 31, 1)"
       returnKeyType="search"
-      selectionColor="rgba(103, 80, 164, 1)"
+      selectionColor="rgba(11, 87, 208, 1)"
       style={
         [
           {
@@ -618,7 +618,7 @@ exports[`renders with placeholder 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "rgba(73, 69, 79, 1)",
+            "color": "rgba(68, 71, 70, 1)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -675,7 +675,7 @@ exports[`renders with placeholder 1`] = `
           style={
             {
               "backgroundColor": "transparent",
-              "borderColor": "rgba(121, 116, 126, 1)",
+              "borderColor": "rgba(116, 119, 117, 1)",
               "borderRadius": 20,
               "borderWidth": 0,
               "elevation": 0,
@@ -861,7 +861,7 @@ exports[`renders with text 1`] = `
         style={
           {
             "backgroundColor": "transparent",
-            "borderColor": "rgba(121, 116, 126, 1)",
+            "borderColor": "rgba(116, 119, 117, 1)",
             "borderRadius": 20,
             "borderWidth": 0,
             "elevation": 0,
@@ -949,7 +949,7 @@ exports[`renders with text 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -985,7 +985,7 @@ exports[`renders with text 1`] = `
       placeholder="Search"
       placeholderTextColor="rgba(28, 27, 31, 1)"
       returnKeyType="search"
-      selectionColor="rgba(103, 80, 164, 1)"
+      selectionColor="rgba(11, 87, 208, 1)"
       style={
         [
           {
@@ -997,7 +997,7 @@ exports[`renders with text 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "rgba(73, 69, 79, 1)",
+            "color": "rgba(68, 71, 70, 1)",
             "fontFamily": "System",
             "fontSize": 16,
             "fontWeight": "400",
@@ -1050,7 +1050,7 @@ exports[`renders with text 1`] = `
           style={
             {
               "backgroundColor": "transparent",
-              "borderColor": "rgba(121, 116, 126, 1)",
+              "borderColor": "rgba(116, 119, 117, 1)",
               "borderRadius": 20,
               "borderWidth": 0,
               "elevation": 0,
@@ -1138,7 +1138,7 @@ exports[`renders with text 1`] = `
               style={
                 [
                   {
-                    "color": "rgba(73, 69, 79, 1)",
+                    "color": "rgba(68, 71, 70, 1)",
                     "fontSize": 24,
                   },
                   [

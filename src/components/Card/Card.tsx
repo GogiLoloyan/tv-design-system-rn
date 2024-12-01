@@ -175,7 +175,7 @@ const CardComponent = (
   const { current: elevationDarkAdaptive } = React.useRef<Animated.Value>(
     new Animated.Value(cardElevation)
   );
-  const { animation, dark, mode, roundness, isV3 } = theme;
+  const { animation, dark, mode, roundness } = theme;
 
   const prevDarkRef = React.useRef<boolean>(dark);
   React.useEffect(() => {
@@ -210,13 +210,13 @@ const CardComponent = (
     const isPressTypeIn = pressType === 'in';
     if (dark && isAdaptiveMode) {
       Animated.timing(elevationDarkAdaptive, {
-        toValue: isPressTypeIn ? (isV3 ? 2 : 8) : cardElevation,
+        toValue: isPressTypeIn ? 2 : cardElevation,
         duration: animationDuration,
         useNativeDriver: false,
       }).start();
     } else {
       Animated.timing(elevation, {
-        toValue: isPressTypeIn ? (isV3 ? 2 : 8) : cardElevation,
+        toValue: isPressTypeIn ? 2 : cardElevation,
         duration: animationDuration,
         useNativeDriver: false,
       }).start();
@@ -257,7 +257,7 @@ const CardComponent = (
   );
 
   const borderRadiusCombinedStyles = {
-    borderRadius: (isV3 ? 3 : 1) * roundness,
+    borderRadius: 3 * roundness,
     ...borderRadiusStyles,
   };
 
@@ -280,19 +280,15 @@ const CardComponent = (
     <Surface
       ref={ref}
       style={[
-        isV3 && !isMode('elevated') && { backgroundColor },
-        !isV3 && isMode('outlined')
-          ? styles.resetElevation
-          : {
-              elevation: computedElevation as unknown as number,
-            },
+        !isMode('elevated') && { backgroundColor },
+        {
+          elevation: computedElevation as unknown as number,
+        },
         borderRadiusCombinedStyles,
         style,
       ]}
       theme={theme}
-      {...(isV3 && {
-        elevation: isMode('elevated') ? computedElevation : 0,
-      })}
+      elevation={isMode('elevated') ? computedElevation : 0}
       testID={`${testID}-container`}
       {...rest}
     >

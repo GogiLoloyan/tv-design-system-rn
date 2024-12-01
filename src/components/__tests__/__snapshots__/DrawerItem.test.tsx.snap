@@ -40,19 +40,16 @@ exports[`renders DrawerItem with icon 1`] = `
         },
         [
           {
+            "height": 56,
+            "justifyContent": "center",
             "marginHorizontal": 10,
-            "marginVertical": 4,
+            "marginLeft": 12,
+            "marginRight": 12,
+            "marginVertical": 0,
           },
           {
             "backgroundColor": undefined,
             "borderRadius": 28,
-          },
-          {
-            "height": 56,
-            "justifyContent": "center",
-            "marginLeft": 12,
-            "marginRight": 12,
-            "marginVertical": 0,
           },
           undefined,
         ],
@@ -65,9 +62,6 @@ exports[`renders DrawerItem with icon 1`] = `
           {
             "alignItems": "center",
             "flexDirection": "row",
-            "padding": 8,
-          },
-          {
             "marginLeft": 16,
             "marginRight": 24,
             "padding": 0,
@@ -93,7 +87,7 @@ exports[`renders DrawerItem with icon 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -145,7 +139,7 @@ exports[`renders DrawerItem with icon 1`] = `
                     "marginRight": 32,
                   },
                   {
-                    "color": "rgba(73, 69, 79, 1)",
+                    "color": "rgba(68, 71, 70, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -206,19 +200,16 @@ exports[`renders active DrawerItem 1`] = `
         },
         [
           {
-            "marginHorizontal": 10,
-            "marginVertical": 4,
-          },
-          {
-            "backgroundColor": "rgba(232, 222, 248, 1)",
-            "borderRadius": 28,
-          },
-          {
             "height": 56,
             "justifyContent": "center",
+            "marginHorizontal": 10,
             "marginLeft": 12,
             "marginRight": 12,
             "marginVertical": 0,
+          },
+          {
+            "backgroundColor": "rgba(194, 231, 255, 1)",
+            "borderRadius": 28,
           },
           undefined,
         ],
@@ -231,9 +222,6 @@ exports[`renders active DrawerItem 1`] = `
           {
             "alignItems": "center",
             "flexDirection": "row",
-            "padding": 8,
-          },
-          {
             "marginLeft": 16,
             "marginRight": 24,
             "padding": 0,
@@ -259,7 +247,7 @@ exports[`renders active DrawerItem 1`] = `
           style={
             [
               {
-                "color": "rgba(29, 25, 43, 1)",
+                "color": "rgba(0, 29, 53, 1)",
                 "fontSize": 24,
               },
               [
@@ -311,7 +299,7 @@ exports[`renders active DrawerItem 1`] = `
                     "marginRight": 32,
                   },
                   {
-                    "color": "rgba(29, 25, 43, 1)",
+                    "color": "rgba(0, 29, 53, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -372,19 +360,16 @@ exports[`renders basic DrawerItem 1`] = `
         },
         [
           {
+            "height": 56,
+            "justifyContent": "center",
             "marginHorizontal": 10,
-            "marginVertical": 4,
+            "marginLeft": 12,
+            "marginRight": 12,
+            "marginVertical": 0,
           },
           {
             "backgroundColor": undefined,
             "borderRadius": 28,
-          },
-          {
-            "height": 56,
-            "justifyContent": "center",
-            "marginLeft": 12,
-            "marginRight": 12,
-            "marginVertical": 0,
           },
           undefined,
         ],
@@ -397,9 +382,6 @@ exports[`renders basic DrawerItem 1`] = `
           {
             "alignItems": "center",
             "flexDirection": "row",
-            "padding": 8,
-          },
-          {
             "marginLeft": 16,
             "marginRight": 24,
             "padding": 0,
@@ -441,7 +423,7 @@ exports[`renders basic DrawerItem 1`] = `
                     "marginRight": 32,
                   },
                   {
-                    "color": "rgba(73, 69, 79, 1)",
+                    "color": "rgba(68, 71, 70, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",

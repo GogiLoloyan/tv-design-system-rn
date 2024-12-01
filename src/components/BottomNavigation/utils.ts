@@ -1,4 +1,3 @@
-import color from 'color';
 import type { InternalTheme } from 'src/types';
 
 import type { black, white } from '../../styles/themes/v2/colors';
@@ -10,7 +9,6 @@ type BaseProps = {
 
 export const getActiveTintColor = ({
   activeColor,
-  defaultColor,
   theme,
 }: BaseProps & {
   activeColor: string | undefined;
@@ -19,16 +17,11 @@ export const getActiveTintColor = ({
     return activeColor;
   }
 
-  if (theme.isV3) {
-    return theme.colors.onSecondaryContainer;
-  }
-
-  return defaultColor;
+  return theme.colors.onSecondaryContainer;
 };
 
 export const getInactiveTintColor = ({
   inactiveColor,
-  defaultColor,
   theme,
 }: BaseProps & {
   inactiveColor: string | undefined;
@@ -37,18 +30,13 @@ export const getInactiveTintColor = ({
     return inactiveColor;
   }
 
-  if (theme.isV3) {
-    return theme.colors.onSurfaceVariant;
-  }
-
-  return color(defaultColor).alpha(0.5).rgb().string();
+  return theme.colors.onSurfaceVariant;
 };
 
 export const getLabelColor = ({
   tintColor,
   hasColor,
   focused,
-  defaultColor,
   theme,
 }: BaseProps & {
   tintColor: string;
@@ -59,12 +47,9 @@ export const getLabelColor = ({
     return tintColor;
   }
 
-  if (theme.isV3) {
-    if (focused) {
-      return theme.colors.onSurface;
-    }
-    return theme.colors.onSurfaceVariant;
+  if (focused) {
+    return theme.colors.onSurface;
   }
 
-  return defaultColor;
+  return theme.colors.onSurfaceVariant;
 };

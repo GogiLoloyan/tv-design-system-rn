@@ -53,20 +53,20 @@ const DialogTitle = ({
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
-  const { isV3, colors, fonts } = theme;
+  const { colors, fonts } = theme;
 
-  const TextComponent = isV3 ? Text : Title;
+  const TextComponent = Text;
 
   const headerTextStyle = {
-    color: isV3 ? colors.onSurface : colors?.text,
-    ...(isV3 ? fonts.headlineSmall : {}),
+    color: colors.onSurface,
+    ...fonts.headlineSmall,
   };
 
   return (
     <TextComponent
       variant="headlineSmall"
       accessibilityRole="header"
-      style={[styles.text, isV3 && styles.v3Text, headerTextStyle, style]}
+      style={[styles.text, headerTextStyle, style]}
       {...rest}
     >
       {children}
@@ -78,13 +78,9 @@ DialogTitle.displayName = 'Dialog.Title';
 
 const styles = StyleSheet.create({
   text: {
-    marginTop: 22,
-    marginBottom: 18,
-    marginHorizontal: 24,
-  },
-  v3Text: {
     marginTop: 16,
     marginBottom: 16,
+    marginHorizontal: 24,
   },
 });
 

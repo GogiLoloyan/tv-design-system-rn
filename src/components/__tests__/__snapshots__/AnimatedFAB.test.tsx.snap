@@ -125,7 +125,7 @@ exports[`renders animated fab 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(234, 221, 255, 1)",
+              "backgroundColor": "rgba(211, 227, 253, 1)",
               "borderRadius": 16,
               "height": 56,
               "left": 16,
@@ -229,7 +229,7 @@ exports[`renders animated fab 1`] = `
         style={
           [
             {
-              "color": "rgba(33, 0, 93, 1)",
+              "color": "rgba(4, 30, 73, 1)",
               "fontSize": 24,
             },
             [
@@ -267,7 +267,7 @@ exports[`renders animated fab 1`] = `
         onTextLayout={[Function]}
         style={
           {
-            "color": "rgba(33, 0, 93, 1)",
+            "color": "rgba(4, 30, 73, 1)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "500",
@@ -419,7 +419,7 @@ exports[`renders animated fab with label on the left 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(234, 221, 255, 1)",
+              "backgroundColor": "rgba(211, 227, 253, 1)",
               "borderRadius": 16,
               "height": 56,
               "left": -16,
@@ -523,7 +523,7 @@ exports[`renders animated fab with label on the left 1`] = `
         style={
           [
             {
-              "color": "rgba(33, 0, 93, 1)",
+              "color": "rgba(4, 30, 73, 1)",
               "fontSize": 24,
             },
             [
@@ -561,7 +561,7 @@ exports[`renders animated fab with label on the left 1`] = `
         onTextLayout={[Function]}
         style={
           {
-            "color": "rgba(33, 0, 93, 1)",
+            "color": "rgba(4, 30, 73, 1)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "500",
@@ -715,7 +715,7 @@ exports[`renders animated fab with label on the right by default 1`] = `
           collapsable={false}
           style={
             {
-              "backgroundColor": "rgba(234, 221, 255, 1)",
+              "backgroundColor": "rgba(211, 227, 253, 1)",
               "borderRadius": 16,
               "height": 56,
               "left": 16,
@@ -819,7 +819,7 @@ exports[`renders animated fab with label on the right by default 1`] = `
         style={
           [
             {
-              "color": "rgba(33, 0, 93, 1)",
+              "color": "rgba(4, 30, 73, 1)",
               "fontSize": 24,
             },
             [
@@ -857,7 +857,7 @@ exports[`renders animated fab with label on the right by default 1`] = `
         onTextLayout={[Function]}
         style={
           {
-            "color": "rgba(33, 0, 93, 1)",
+            "color": "rgba(4, 30, 73, 1)",
             "fontFamily": "System",
             "fontSize": 14,
             "fontWeight": "500",

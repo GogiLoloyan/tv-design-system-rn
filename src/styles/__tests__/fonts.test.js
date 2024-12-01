@@ -1,4 +1,4 @@
-import configureFonts, { fontConfig } from '../fonts';
+import configureFonts from '../fonts';
 import { typescale } from '../themes/v3/tokens';
 
 const mockPlatform = (OS) => {
@@ -135,60 +135,6 @@ const customFontV3 = {
 };
 
 describe('configureFonts', () => {
-  it('adds custom fonts to the iOS config', () => {
-    mockPlatform('ios');
-    expect(
-      configureFonts({
-        config: {
-          ios: {
-            ...fontConfig.ios,
-            customFont,
-          },
-        },
-        isV3: false,
-      })
-    ).toEqual({
-      ...fontConfig.ios,
-      customFont,
-    });
-  });
-
-  it('adds custom fonts to the Android config', () => {
-    mockPlatform('android');
-    expect(
-      configureFonts({
-        config: {
-          android: {
-            ...fontConfig.android,
-            customFont,
-          },
-        },
-        isV3: false,
-      })
-    ).toEqual({
-      ...fontConfig.android,
-      customFont,
-    });
-  });
-
-  it('adds custom fonts to the Web config', () => {
-    mockPlatform('web');
-    expect(
-      configureFonts({
-        config: {
-          web: {
-            ...fontConfig.web,
-            customFont,
-          },
-        },
-        isV3: false,
-      })
-    ).toEqual({
-      ...fontConfig.web,
-      customFont,
-    });
-  });
-
   it('overrides properties passed in config for all variants', () => {
     expect(
       configureFonts({

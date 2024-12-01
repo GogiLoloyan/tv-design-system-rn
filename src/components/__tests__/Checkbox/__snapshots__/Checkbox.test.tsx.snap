@@ -62,7 +62,7 @@ exports[`renders Checkbox with custom testID 1`] = `
       style={
         [
           {
-            "color": "rgba(103, 80, 164, 1)",
+            "color": "rgba(11, 87, 208, 1)",
             "fontSize": 24,
           },
           [
@@ -247,7 +247,7 @@ exports[`renders checked Checkbox with onPress 1`] = `
       style={
         [
           {
-            "color": "rgba(103, 80, 164, 1)",
+            "color": "rgba(11, 87, 208, 1)",
             "fontSize": 24,
           },
           [
@@ -339,7 +339,7 @@ exports[`renders indeterminate Checkbox 1`] = `
       style={
         [
           {
-            "color": "rgba(103, 80, 164, 1)",
+            "color": "rgba(11, 87, 208, 1)",
             "fontSize": 24,
           },
           [
@@ -617,7 +617,7 @@ exports[`renders unchecked Checkbox with onPress 1`] = `
       style={
         [
           {
-            "color": "rgba(103, 80, 164, 1)",
+            "color": "rgba(11, 87, 208, 1)",
             "fontSize": 24,
           },
           [

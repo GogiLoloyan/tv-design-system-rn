@@ -16,7 +16,7 @@ exports[`DrawerSection renders properly 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(202, 196, 208, 1)",
+          "backgroundColor": "rgba(196, 199, 197, 1)",
           "height": 0.5,
         },
         undefined,
@@ -29,10 +29,8 @@ exports[`DrawerSection renders properly 1`] = `
         },
         [
           {
+            "backgroundColor": "rgba(116, 119, 117, 1)",
             "marginTop": 4,
-          },
-          {
-            "backgroundColor": "rgba(121, 116, 126, 1)",
           },
         ],
       ]

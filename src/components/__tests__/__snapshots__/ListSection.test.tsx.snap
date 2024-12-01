@@ -16,7 +16,7 @@ exports[`renders list section with custom title style 1`] = `
         "scale": 1,
       },
       "colors": {
-        "backdrop": "rgba(50, 47, 55, 0.4)",
+        "backdrop": "rgba(45, 49, 47, 0.4)",
         "background": "rgba(255, 251, 254, 1)",
         "elevation": {
           "level0": "transparent",
@@ -29,33 +29,33 @@ exports[`renders list section with custom title style 1`] = `
         "error": "rgba(179, 38, 30, 1)",
         "errorContainer": "rgba(249, 222, 220, 1)",
         "inverseOnSurface": "rgba(244, 239, 244, 1)",
-        "inversePrimary": "rgba(208, 188, 255, 1)",
+        "inversePrimary": "rgba(168, 199, 250, 1)",
         "inverseSurface": "rgba(49, 48, 51, 1)",
         "onBackground": "rgba(28, 27, 31, 1)",
         "onError": "rgba(255, 255, 255, 1)",
         "onErrorContainer": "rgba(65, 14, 11, 1)",
         "onPrimary": "rgba(255, 255, 255, 1)",
-        "onPrimaryContainer": "rgba(33, 0, 93, 1)",
+        "onPrimaryContainer": "rgba(4, 30, 73, 1)",
         "onSecondary": "rgba(255, 255, 255, 1)",
-        "onSecondaryContainer": "rgba(29, 25, 43, 1)",
+        "onSecondaryContainer": "rgba(0, 29, 53, 1)",
         "onSurface": "rgba(28, 27, 31, 1)",
         "onSurfaceDisabled": "rgba(28, 27, 31, 0.38)",
-        "onSurfaceVariant": "rgba(73, 69, 79, 1)",
+        "onSurfaceVariant": "rgba(68, 71, 70, 1)",
         "onTertiary": "rgba(255, 255, 255, 1)",
-        "onTertiaryContainer": "rgba(49, 17, 29, 1)",
-        "outline": "rgba(121, 116, 126, 1)",
-        "outlineVariant": "rgba(202, 196, 208, 1)",
-        "primary": "rgba(103, 80, 164, 1)",
-        "primaryContainer": "rgba(234, 221, 255, 1)",
+        "onTertiaryContainer": "rgba(7, 39, 17, 1)",
+        "outline": "rgba(116, 119, 117, 1)",
+        "outlineVariant": "rgba(196, 199, 197, 1)",
+        "primary": "rgba(11, 87, 208, 1)",
+        "primaryContainer": "rgba(211, 227, 253, 1)",
         "scrim": "rgba(0, 0, 0, 1)",
-        "secondary": "rgba(98, 91, 113, 1)",
-        "secondaryContainer": "rgba(232, 222, 248, 1)",
+        "secondary": "rgba(0, 99, 155, 1)",
+        "secondaryContainer": "rgba(194, 231, 255, 1)",
         "shadow": "rgba(0, 0, 0, 1)",
         "surface": "rgba(255, 251, 254, 1)",
         "surfaceDisabled": "rgba(28, 27, 31, 0.12)",
-        "surfaceVariant": "rgba(231, 224, 236, 1)",
-        "tertiary": "rgba(125, 82, 96, 1)",
-        "tertiaryContainer": "rgba(255, 216, 228, 1)",
+        "surfaceVariant": "rgba(225, 227, 225, 1)",
+        "tertiary": "rgba(20, 108, 46, 1)",
+        "tertiaryContainer": "rgba(196, 238, 208, 1)",
       },
       "dark": false,
       "fonts": {
@@ -170,7 +170,6 @@ exports[`renders list section with custom title style 1`] = `
           "lineHeight": 20,
         },
       },
-      "isV3": true,
       "roundness": 4,
       "version": 3,
     }
@@ -201,7 +200,7 @@ exports[`renders list section with custom title style 1`] = `
               "paddingVertical": 13,
             },
             {
-              "color": "rgba(73, 69, 79, 1)",
+              "color": "rgba(68, 71, 70, 1)",
               "fontFamily": "System",
               "fontSize": 14,
               "fontWeight": "400",
@@ -297,7 +296,7 @@ exports[`renders list section with custom title style 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -454,7 +453,7 @@ exports[`renders list section with custom title style 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -551,7 +550,7 @@ exports[`renders list section with subheader 1`] = `
         "scale": 1,
       },
       "colors": {
-        "backdrop": "rgba(50, 47, 55, 0.4)",
+        "backdrop": "rgba(45, 49, 47, 0.4)",
         "background": "rgba(255, 251, 254, 1)",
         "elevation": {
           "level0": "transparent",
@@ -564,33 +563,33 @@ exports[`renders list section with subheader 1`] = `
         "error": "rgba(179, 38, 30, 1)",
         "errorContainer": "rgba(249, 222, 220, 1)",
         "inverseOnSurface": "rgba(244, 239, 244, 1)",
-        "inversePrimary": "rgba(208, 188, 255, 1)",
+        "inversePrimary": "rgba(168, 199, 250, 1)",
         "inverseSurface": "rgba(49, 48, 51, 1)",
         "onBackground": "rgba(28, 27, 31, 1)",
         "onError": "rgba(255, 255, 255, 1)",
         "onErrorContainer": "rgba(65, 14, 11, 1)",
         "onPrimary": "rgba(255, 255, 255, 1)",
-        "onPrimaryContainer": "rgba(33, 0, 93, 1)",
+        "onPrimaryContainer": "rgba(4, 30, 73, 1)",
         "onSecondary": "rgba(255, 255, 255, 1)",
-        "onSecondaryContainer": "rgba(29, 25, 43, 1)",
+        "onSecondaryContainer": "rgba(0, 29, 53, 1)",
         "onSurface": "rgba(28, 27, 31, 1)",
         "onSurfaceDisabled": "rgba(28, 27, 31, 0.38)",
-        "onSurfaceVariant": "rgba(73, 69, 79, 1)",
+        "onSurfaceVariant": "rgba(68, 71, 70, 1)",
         "onTertiary": "rgba(255, 255, 255, 1)",
-        "onTertiaryContainer": "rgba(49, 17, 29, 1)",
-        "outline": "rgba(121, 116, 126, 1)",
-        "outlineVariant": "rgba(202, 196, 208, 1)",
-        "primary": "rgba(103, 80, 164, 1)",
-        "primaryContainer": "rgba(234, 221, 255, 1)",
+        "onTertiaryContainer": "rgba(7, 39, 17, 1)",
+        "outline": "rgba(116, 119, 117, 1)",
+        "outlineVariant": "rgba(196, 199, 197, 1)",
+        "primary": "rgba(11, 87, 208, 1)",
+        "primaryContainer": "rgba(211, 227, 253, 1)",
         "scrim": "rgba(0, 0, 0, 1)",
-        "secondary": "rgba(98, 91, 113, 1)",
-        "secondaryContainer": "rgba(232, 222, 248, 1)",
+        "secondary": "rgba(0, 99, 155, 1)",
+        "secondaryContainer": "rgba(194, 231, 255, 1)",
         "shadow": "rgba(0, 0, 0, 1)",
         "surface": "rgba(255, 251, 254, 1)",
         "surfaceDisabled": "rgba(28, 27, 31, 0.12)",
-        "surfaceVariant": "rgba(231, 224, 236, 1)",
-        "tertiary": "rgba(125, 82, 96, 1)",
-        "tertiaryContainer": "rgba(255, 216, 228, 1)",
+        "surfaceVariant": "rgba(225, 227, 225, 1)",
+        "tertiary": "rgba(20, 108, 46, 1)",
+        "tertiaryContainer": "rgba(196, 238, 208, 1)",
       },
       "dark": false,
       "fonts": {
@@ -705,7 +704,6 @@ exports[`renders list section with subheader 1`] = `
           "lineHeight": 20,
         },
       },
-      "isV3": true,
       "roundness": 4,
       "version": 3,
     }
@@ -736,7 +734,7 @@ exports[`renders list section with subheader 1`] = `
               "paddingVertical": 13,
             },
             {
-              "color": "rgba(73, 69, 79, 1)",
+              "color": "rgba(68, 71, 70, 1)",
               "fontFamily": "System",
               "fontSize": 14,
               "fontWeight": "400",
@@ -830,7 +828,7 @@ exports[`renders list section with subheader 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -987,7 +985,7 @@ exports[`renders list section with subheader 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -1084,7 +1082,7 @@ exports[`renders list section without subheader 1`] = `
         "scale": 1,
       },
       "colors": {
-        "backdrop": "rgba(50, 47, 55, 0.4)",
+        "backdrop": "rgba(45, 49, 47, 0.4)",
         "background": "rgba(255, 251, 254, 1)",
         "elevation": {
           "level0": "transparent",
@@ -1097,33 +1095,33 @@ exports[`renders list section without subheader 1`] = `
         "error": "rgba(179, 38, 30, 1)",
         "errorContainer": "rgba(249, 222, 220, 1)",
         "inverseOnSurface": "rgba(244, 239, 244, 1)",
-        "inversePrimary": "rgba(208, 188, 255, 1)",
+        "inversePrimary": "rgba(168, 199, 250, 1)",
         "inverseSurface": "rgba(49, 48, 51, 1)",
         "onBackground": "rgba(28, 27, 31, 1)",
         "onError": "rgba(255, 255, 255, 1)",
         "onErrorContainer": "rgba(65, 14, 11, 1)",
         "onPrimary": "rgba(255, 255, 255, 1)",
-        "onPrimaryContainer": "rgba(33, 0, 93, 1)",
+        "onPrimaryContainer": "rgba(4, 30, 73, 1)",
         "onSecondary": "rgba(255, 255, 255, 1)",
-        "onSecondaryContainer": "rgba(29, 25, 43, 1)",
+        "onSecondaryContainer": "rgba(0, 29, 53, 1)",
         "onSurface": "rgba(28, 27, 31, 1)",
         "onSurfaceDisabled": "rgba(28, 27, 31, 0.38)",
-        "onSurfaceVariant": "rgba(73, 69, 79, 1)",
+        "onSurfaceVariant": "rgba(68, 71, 70, 1)",
         "onTertiary": "rgba(255, 255, 255, 1)",
-        "onTertiaryContainer": "rgba(49, 17, 29, 1)",
-        "outline": "rgba(121, 116, 126, 1)",
-        "outlineVariant": "rgba(202, 196, 208, 1)",
-        "primary": "rgba(103, 80, 164, 1)",
-        "primaryContainer": "rgba(234, 221, 255, 1)",
+        "onTertiaryContainer": "rgba(7, 39, 17, 1)",
+        "outline": "rgba(116, 119, 117, 1)",
+        "outlineVariant": "rgba(196, 199, 197, 1)",
+        "primary": "rgba(11, 87, 208, 1)",
+        "primaryContainer": "rgba(211, 227, 253, 1)",
         "scrim": "rgba(0, 0, 0, 1)",
-        "secondary": "rgba(98, 91, 113, 1)",
-        "secondaryContainer": "rgba(232, 222, 248, 1)",
+        "secondary": "rgba(0, 99, 155, 1)",
+        "secondaryContainer": "rgba(194, 231, 255, 1)",
         "shadow": "rgba(0, 0, 0, 1)",
         "surface": "rgba(255, 251, 254, 1)",
         "surfaceDisabled": "rgba(28, 27, 31, 0.12)",
-        "surfaceVariant": "rgba(231, 224, 236, 1)",
-        "tertiary": "rgba(125, 82, 96, 1)",
-        "tertiaryContainer": "rgba(255, 216, 228, 1)",
+        "surfaceVariant": "rgba(225, 227, 225, 1)",
+        "tertiary": "rgba(20, 108, 46, 1)",
+        "tertiaryContainer": "rgba(196, 238, 208, 1)",
       },
       "dark": false,
       "fonts": {
@@ -1238,7 +1236,6 @@ exports[`renders list section without subheader 1`] = `
           "lineHeight": 20,
         },
       },
-      "isV3": true,
       "roundness": 4,
       "version": 3,
     }
@@ -1323,7 +1320,7 @@ exports[`renders list section without subheader 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [
@@ -1480,7 +1477,7 @@ exports[`renders list section without subheader 1`] = `
           style={
             [
               {
-                "color": "rgba(73, 69, 79, 1)",
+                "color": "rgba(68, 71, 70, 1)",
                 "fontSize": 24,
               },
               [

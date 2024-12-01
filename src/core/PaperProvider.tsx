@@ -8,7 +8,7 @@ import {
 
 import SafeAreaProviderCompat from './SafeAreaProviderCompat';
 import { Provider as SettingsProvider, Settings } from './settings';
-import { defaultThemesByVersion, ThemeProvider } from './theming';
+import { defaultTheme, ThemeProvider } from './theming';
 import MaterialCommunityIcon from '../components/MaterialCommunityIcon';
 import PortalHost from '../components/Portal/PortalHost';
 import type { ThemeProp } from '../types';
@@ -77,24 +77,19 @@ const PaperProvider = (props: Props) => {
   }, [props.theme, isOnlyVersionInTheme]);
 
   const getTheme = () => {
-    const themeVersion = props.theme?.version || 3;
     const scheme = colorScheme || 'light';
-    const defaultThemeBase = defaultThemesByVersion[themeVersion][scheme];
+    const defaultThemeBase = defaultTheme[scheme];
 
     const extendedThemeBase = {
       ...defaultThemeBase,
       ...props.theme,
-      version: themeVersion,
       animation: {
         ...props.theme?.animation,
         scale: reduceMotionEnabled ? 0 : 1,
       },
     };
 
-    return {
-      ...extendedThemeBase,
-      isV3: extendedThemeBase.version === 3,
-    };
+    return extendedThemeBase;
   };
 
   const { children, settings } = props;

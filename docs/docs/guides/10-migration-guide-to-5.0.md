@@ -36,15 +36,14 @@ npx pod-install
 
 ### Versioning
 
-Introducing Material You <i>(MD3)</i> into `react-native-paper` doesn't mean dropping previous Material Design <i>(MD2)</i>! On the contrary, both of them will be supported, however, not simultaneously. To specify which design system components should follow in the app, there is a newly created property in the theme called `version` which can accept only one of two values:
+To specify which design system components should follow in the app, there is a newly created property in the theme called `version` which can accept only one of two values:
 
 * <b>3</b> – <b>(default)</b> new Material You <i>(MD3)</i>,
-* <b>2</b> - previous Material Design <i>(MD2)</i>.
 
 ```js
 theme: {
   /* ... */
-  version: 3 | 2
+  version: 3
 }
 ```
 
@@ -169,7 +168,7 @@ Take a look at the suggested replacement diff:
 The existing utility called `configureFonts` was adjusted to help users configure their theme fonts in both version, that's why that function, as of today, is going to accept the object with the follwing properties as an argument:
 
 ```ts
-configureFonts(params)
+configureFonts(fontConfig)
 ```
 
 <b>Parameters:</b>
@@ -180,16 +179,14 @@ configureFonts(params)
 
 Valid `params` keys are:
 
-  * `config` ([MD2FontsConfig](https://github.com/callstack/react-native-paper/blob/main/src/styles/fonts.tsx#L63) | [MD3FontsConfig](https://github.com/callstack/react-native-paper/blob/main/src/styles/fonts.tsx#L67)) - fonts config object appropriate to the MD version
-  * `isV3` (boolean) - whether adjusting theme fonts for v3. Default it <b>true</b>.
+  * `config` [MD3FontsConfig](https://github.com/callstack/react-native-paper/blob/main/src/styles/fonts.tsx#L67)) - fonts config object appropriate to the MD version
 
 To use your current font config from <b>v2</b> and migrate to <b>v3</b> there are two requirements:
 * the font config previously passed directly into function has to be passed into the params object property called `config`
-* the params object property `isV3` has to be set to `false`
 
 ```diff
 - configureFonts(fontConfig)
-+ configureFonts({config: fontConfig, isV3: false})
++ configureFonts({config: fontConfig})
 ```
 
 :::tip

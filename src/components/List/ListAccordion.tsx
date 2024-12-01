@@ -194,9 +194,6 @@ const ListAccordion = ({
   const onDescriptionTextLayout = (
     event: NativeSyntheticEvent<TextLayoutEventData>
   ) => {
-    if (!theme.isV3) {
-      return;
-    }
     const { nativeEvent } = event;
     setAlignToTop(nativeEvent.lines.length >= 2);
   };
@@ -223,12 +220,11 @@ const ListAccordion = ({
     ? groupContext.expandedId === id
     : expandedInternal;
 
-  const { titleColor, descriptionColor, titleTextColor, rippleColor } =
-    getAccordionColors({
-      theme,
-      isExpanded,
-      customRippleColor,
-    });
+  const { descriptionColor, titleTextColor, rippleColor } = getAccordionColors({
+    theme,
+    isExpanded,
+    customRippleColor,
+  });
 
   const handlePress =
     groupContext && id !== undefined
@@ -238,7 +234,7 @@ const ListAccordion = ({
     <View>
       <View style={{ backgroundColor: theme?.colors?.background }}>
         <TouchableRipple
-          style={[theme.isV3 ? styles.containerV3 : styles.container, style]}
+          style={[styles.container, style]}
           onPress={handlePress}
           onLongPress={onLongPress}
           delayLongPress={delayLongPress}
@@ -251,19 +247,14 @@ const ListAccordion = ({
           background={background}
           borderless
         >
-          <View
-            style={theme.isV3 ? styles.rowV3 : styles.row}
-            pointerEvents={pointerEvents}
-          >
+          <View style={styles.row} pointerEvents={pointerEvents}>
             {left
               ? left({
                   color: isExpanded ? theme.colors?.primary : descriptionColor,
-                  style: getLeftStyles(alignToTop, description, theme.isV3),
+                  style: getLeftStyles(alignToTop, Boolean(description)),
                 })
               : null}
-            <View
-              style={[theme.isV3 ? styles.itemV3 : styles.item, styles.content]}
-            >
+            <View style={[styles.item, styles.content]}>
               <Text
                 selectable={false}
                 numberOfLines={titleNumberOfLines}
@@ -306,7 +297,7 @@ const ListAccordion = ({
               ) : (
                 <MaterialCommunityIcon
                   name={isExpanded ? 'chevron-up' : 'chevron-down'}
-                  color={theme.isV3 ? descriptionColor : titleColor}
+                  color={descriptionColor}
                   size={24}
                   direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
                 />
@@ -325,10 +316,7 @@ const ListAccordion = ({
               !child.props.right
             ) {
               return React.cloneElement(child as React.ReactElement<any>, {
-                style: [
-                  theme.isV3 ? styles.childV3 : styles.child,
-                  child.props.style,
-                ],
+                style: [styles.child, child.props.style],
                 theme,
               });
             }
@@ -344,17 +332,10 @@ ListAccordion.displayName = 'List.Accordion';
 
 const styles = StyleSheet.create({
   container: {
-    padding: 8,
-  },
-  containerV3: {
     paddingVertical: 8,
     paddingRight: 24,
   },
   row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  rowV3: {
     flexDirection: 'row',
     marginVertical: 6,
   },
@@ -370,16 +351,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   item: {
-    marginVertical: 6,
-    paddingLeft: 8,
-  },
-  itemV3: {
     paddingLeft: 16,
   },
   child: {
-    paddingLeft: 64,
-  },
-  childV3: {
     paddingLeft: 40,
   },
   content: {

@@ -59,8 +59,6 @@ const CardCover = ({
 
   const coverStyle = getCardCoverStyle({
     theme,
-    index,
-    total,
     borderRadiusStyles,
   });
 

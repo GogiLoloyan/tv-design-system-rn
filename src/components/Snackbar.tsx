@@ -238,7 +238,7 @@ const Snackbar = ({
     }
   }, [visible, handleOnVisible, handleOnHidden]);
 
-  const { colors, roundness, isV3 } = theme;
+  const { colors, roundness } = theme;
 
   if (hidden) {
     return null;
@@ -252,11 +252,11 @@ const Snackbar = ({
     ...actionProps
   } = action || {};
 
-  const buttonTextColor = isV3 ? colors.inversePrimary : colors.accent;
-  const textColor = isV3 ? colors.inverseOnSurface : colors?.surface;
-  const backgroundColor = isV3 ? colors.inverseSurface : colors?.onSurface;
+  const buttonTextColor = colors.inversePrimary;
+  const textColor = colors.inverseOnSurface;
+  const backgroundColor = colors.inverseSurface;
 
-  const isIconButton = isV3 && onIconPress;
+  const isIconButton = onIconPress;
 
   const marginLeft = action ? -12 : -16;
 
@@ -296,7 +296,6 @@ const Snackbar = ({
         accessibilityLiveRegion="polite"
         theme={theme}
         style={[
-          !isV3 && styles.elevation,
           styles.container,
           {
             backgroundColor,
@@ -316,7 +315,7 @@ const Snackbar = ({
           style,
         ]}
         testID={testID}
-        {...(isV3 && { elevation })}
+        elevation={elevation}
         {...rest}
       >
         {renderChildrenWithWrapper()}
@@ -330,7 +329,6 @@ const Snackbar = ({
                 }}
                 style={[styles.button, actionStyle]}
                 textColor={buttonTextColor}
-                compact={!isV3}
                 mode="text"
                 theme={theme}
                 rippleColor={actionRippleColor}
@@ -416,9 +414,6 @@ const styles = StyleSheet.create({
   button: {
     marginRight: 8,
     marginLeft: 4,
-  },
-  elevation: {
-    elevation: 6,
   },
   icon: {
     width: 40,

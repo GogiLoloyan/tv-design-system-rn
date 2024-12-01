@@ -7,7 +7,6 @@ import {
   Card,
   Chip,
   IconButton,
-  Paragraph,
   Text,
 } from 'react-native-paper';
 
@@ -18,16 +17,12 @@ import ScreenWrapper from '../ScreenWrapper';
 type Mode = 'elevated' | 'outlined' | 'contained';
 
 const CardExample = () => {
-  const { colors, isV3 } = useExampleTheme();
+  const { colors } = useExampleTheme();
   const [selectedMode, setSelectedMode] = React.useState('elevated' as Mode);
   const [isSelected, setIsSelected] = React.useState(false);
   const preferences = React.useContext(PreferencesContext);
 
-  const modes = isV3
-    ? ['elevated', 'outlined', 'contained']
-    : ['elevated', 'outlined'];
-
-  const TextComponent = isV3 ? Text : Paragraph;
+  const modes = ['elevated', 'outlined', 'contained'];
 
   return (
     <ScreenWrapper contentContainerStyle={styles.content}>
@@ -54,30 +49,28 @@ const CardExample = () => {
           />
           <Card.Title title="Abandoned Ship" />
           <Card.Content>
-            <TextComponent variant="bodyMedium">
+            <Text variant="bodyMedium">
               The Abandoned Ship is a wrecked ship located on Route 108 in
               Hoenn, originally being a ship named the S.S. Cactus. The second
               part of the ship can only be accessed by using Dive and contains
               the Scanner.
-            </TextComponent>
+            </Text>
           </Card.Content>
         </Card>
-        {isV3 && (
-          <Card style={styles.card} mode={selectedMode}>
-            <Card.Cover source={require('../../assets/images/bridge.jpg')} />
-            <Card.Title
-              title="Title variant"
-              subtitle="Subtitle variant"
-              titleVariant="headlineMedium"
-              subtitleVariant="bodyLarge"
-            />
-            <Card.Content>
-              <TextComponent variant="bodyMedium">
-                This is a card using title and subtitle with specified variants.
-              </TextComponent>
-            </Card.Content>
-          </Card>
-        )}
+        <Card style={styles.card} mode={selectedMode}>
+          <Card.Cover source={require('../../assets/images/bridge.jpg')} />
+          <Card.Title
+            title="Title variant"
+            subtitle="Subtitle variant"
+            titleVariant="headlineMedium"
+            subtitleVariant="bodyLarge"
+          />
+          <Card.Content>
+            <Text variant="bodyMedium">
+              This is a card using title and subtitle with specified variants.
+            </Text>
+          </Card.Content>
+        </Card>
         <Card style={styles.card} mode={selectedMode}>
           <Card.Cover source={require('../../assets/images/forest.jpg')} />
           <Card.Actions>
@@ -95,13 +88,13 @@ const CardExample = () => {
             )}
           />
           <Card.Content>
-            <TextComponent variant="bodyMedium">
+            <Text variant="bodyMedium">
               Dotted around the Hoenn region, you will find loamy soil, many of
               which are housing berries. Once you have picked the berries, then
               you have the ability to use that loamy soil to grow your own
               berries. These can be any berry and will require attention to get
               the best crop.
-            </TextComponent>
+            </Text>
           </Card.Content>
         </Card>
         <Card style={styles.card} mode={selectedMode}>
@@ -159,9 +152,9 @@ const CardExample = () => {
           <Card.Cover source={require('../../assets/images/chameleon.jpg')} />
           <Card.Title title="Pressable Chameleon" />
           <Card.Content>
-            <TextComponent variant="bodyMedium">
+            <Text variant="bodyMedium">
               This is a pressable chameleon. If you press me, I will alert.
-            </TextComponent>
+            </Text>
           </Card.Content>
         </Card>
         <Card
@@ -179,10 +172,10 @@ const CardExample = () => {
             left={(props) => <Avatar.Icon {...props} icon="city" />}
           />
           <Card.Content>
-            <TextComponent variant="bodyMedium">
+            <Text variant="bodyMedium">
               This is a long press only city. If you long press me, I will
               alert.
-            </TextComponent>
+            </Text>
           </Card.Content>
         </Card>
         <Card
@@ -197,9 +190,9 @@ const CardExample = () => {
             left={(props) => <Avatar.Icon {...props} icon="format-paint" />}
           />
           <Card.Content>
-            <TextComponent variant="bodyMedium">
+            <Text variant="bodyMedium">
               This is pressable card. If you press me, I will switch the theme.
-            </TextComponent>
+            </Text>
           </Card.Content>
         </Card>
       </ScrollView>

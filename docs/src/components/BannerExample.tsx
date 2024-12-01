@@ -77,7 +77,7 @@ const BannerExample = () => {
           <Button loading onPress={() => {}}>
             Loading
           </Button>
-          <Button mode="contained-tonal" icon="camera" onPress={() => {}}>
+          <Button mode="contained" icon="camera" onPress={() => {}}>
             Icon
           </Button>
           <Button icon="camera" mode="contained" onPress={() => {}}>

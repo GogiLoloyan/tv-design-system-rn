@@ -5,7 +5,7 @@ exports[`renders avatar with icon 1`] = `
   style={
     [
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(11, 87, 208, 1)",
         "borderRadius": 32,
         "height": 64,
         "width": 64,
@@ -119,7 +119,7 @@ exports[`renders avatar with image 1`] = `
   style={
     [
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(11, 87, 208, 1)",
         "borderRadius": 32,
         "height": 64,
         "width": 64,
@@ -151,7 +151,7 @@ exports[`renders avatar with text 1`] = `
   style={
     [
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(11, 87, 208, 1)",
         "borderRadius": 32,
         "height": 64,
         "width": 64,
@@ -259,7 +259,7 @@ exports[`renders avatar with text and custom colors 1`] = `
   style={
     [
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(11, 87, 208, 1)",
         "borderRadius": 32,
         "height": 64,
         "width": 64,
@@ -313,7 +313,7 @@ exports[`renders avatar with text and custom size 1`] = `
   style={
     [
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(11, 87, 208, 1)",
         "borderRadius": 48,
         "height": 96,
         "width": 96,

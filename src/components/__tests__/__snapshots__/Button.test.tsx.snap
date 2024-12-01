@@ -122,14 +122,13 @@ exports[`renders button with an accessibility hint 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -273,14 +272,13 @@ exports[`renders button with an accessibility label 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -423,14 +421,13 @@ exports[`renders button with button color 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -573,7 +570,6 @@ exports[`renders button with color 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
@@ -723,14 +719,13 @@ exports[`renders button with custom testID 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -851,13 +846,10 @@ exports[`renders button with icon 1`] = `
           style={
             [
               {
-                "marginLeft": 12,
-                "marginRight": -4,
-              },
-              {
                 "marginLeft": 16,
                 "marginRight": -16,
               },
+              undefined,
               {
                 "marginLeft": 12,
                 "marginRight": -8,
@@ -875,7 +867,7 @@ exports[`renders button with icon 1`] = `
             style={
               [
                 {
-                  "color": "rgba(103, 80, 164, 1)",
+                  "color": "rgba(11, 87, 208, 1)",
                   "fontSize": 18,
                 },
                 [
@@ -929,14 +921,13 @@ exports[`renders button with icon 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 16,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -1059,13 +1050,10 @@ exports[`renders button with icon in reverse order 1`] = `
           style={
             [
               {
-                "marginLeft": -4,
-                "marginRight": 12,
-              },
-              {
                 "marginLeft": -16,
                 "marginRight": 16,
               },
+              undefined,
               {
                 "marginLeft": -8,
                 "marginRight": 12,
@@ -1083,7 +1071,7 @@ exports[`renders button with icon in reverse order 1`] = `
             style={
               [
                 {
-                  "color": "rgba(103, 80, 164, 1)",
+                  "color": "rgba(11, 87, 208, 1)",
                   "fontSize": 18,
                 },
                 [
@@ -1137,14 +1125,13 @@ exports[`renders button with icon in reverse order 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 16,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -1171,7 +1158,7 @@ exports[`renders contained contained with mode 1`] = `
   collapsable={false}
   style={
     {
-      "backgroundColor": "rgba(103, 80, 164, 1)",
+      "backgroundColor": "rgba(68, 71, 70, 1)",
       "borderRadius": 20,
       "shadowColor": "#000",
       "shadowOffset": {
@@ -1188,7 +1175,7 @@ exports[`renders contained contained with mode 1`] = `
     collapsable={false}
     style={
       {
-        "backgroundColor": "rgba(103, 80, 164, 1)",
+        "backgroundColor": "rgba(68, 71, 70, 1)",
         "borderColor": "transparent",
         "borderRadius": 20,
         "borderStyle": "solid",
@@ -1287,7 +1274,6 @@ exports[`renders contained contained with mode 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 24,
                     "marginVertical": 10,
@@ -1438,7 +1424,6 @@ exports[`renders disabled button 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
@@ -1578,13 +1563,10 @@ exports[`renders loading button 1`] = `
               },
               [
                 {
-                  "marginLeft": 12,
-                  "marginRight": -4,
-                },
-                {
                   "marginLeft": 16,
                   "marginRight": -16,
                 },
+                undefined,
                 {
                   "marginLeft": 12,
                   "marginRight": -8,
@@ -1672,7 +1654,7 @@ exports[`renders loading button 1`] = `
                         collapsable={false}
                         style={
                           {
-                            "borderColor": "rgba(103, 80, 164, 1)",
+                            "borderColor": "rgba(11, 87, 208, 1)",
                             "borderRadius": 9,
                             "borderWidth": 1.8,
                             "height": 18,
@@ -1755,7 +1737,7 @@ exports[`renders loading button 1`] = `
                         collapsable={false}
                         style={
                           {
-                            "borderColor": "rgba(103, 80, 164, 1)",
+                            "borderColor": "rgba(11, 87, 208, 1)",
                             "borderRadius": 9,
                             "borderWidth": 1.8,
                             "height": 18,
@@ -1796,14 +1778,13 @@ exports[`renders loading button 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 16,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -1848,7 +1829,7 @@ exports[`renders outlined button with mode 1`] = `
     style={
       {
         "backgroundColor": "transparent",
-        "borderColor": "rgba(121, 116, 126, 1)",
+        "borderColor": "rgba(116, 119, 117, 1)",
         "borderRadius": 20,
         "borderStyle": "solid",
         "borderWidth": 1,
@@ -1946,7 +1927,6 @@ exports[`renders outlined button with mode 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 24,
                     "marginVertical": 10,
@@ -1954,7 +1934,7 @@ exports[`renders outlined button with mode 1`] = `
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -2097,14 +2077,13 @@ exports[`renders text button by default 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -2247,14 +2226,13 @@ exports[`renders text button with mode 1`] = `
                     "marginVertical": 9,
                     "textAlign": "center",
                   },
-                  false,
                   {
                     "marginHorizontal": 12,
                   },
                   undefined,
                   false,
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",

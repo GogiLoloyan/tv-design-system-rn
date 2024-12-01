@@ -9,12 +9,7 @@ import {
 import { render, act } from '@testing-library/react-native';
 import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock';
 
-import {
-  MD2LightTheme,
-  MD2DarkTheme,
-  MD3LightTheme,
-  MD3DarkTheme,
-} from '../../styles/themes';
+import { MD3LightTheme, MD3DarkTheme } from '../../styles/themes';
 import type { ThemeProp } from '../../types';
 import PaperProvider from '../PaperProvider';
 import { useTheme } from '../theming';
@@ -110,8 +105,8 @@ const createProvider = (theme?: ThemeProp) => {
   );
 };
 
-const ExtendedLightTheme = { ...MD3LightTheme, isV3: true } as ThemeProp;
-const ExtendedDarkTheme = { ...MD3DarkTheme, isV3: true } as ThemeProp;
+const ExtendedLightTheme = { ...MD3LightTheme } as ThemeProp;
+const ExtendedDarkTheme = { ...MD3DarkTheme } as ThemeProp;
 
 describe('PaperProvider', () => {
   beforeEach(() => {
@@ -243,8 +238,6 @@ describe('PaperProvider', () => {
 
   it.each`
     version | colorScheme | expectedTheme
-    ${2}    | ${'light'}  | ${MD2LightTheme}
-    ${2}    | ${'dark'}   | ${MD2DarkTheme}
     ${3}    | ${'light'}  | ${MD3LightTheme}
     ${3}    | ${'dark'}   | ${MD3DarkTheme}
   `(

@@ -61,12 +61,6 @@ export type MaterialBottomTabNavigationOptions = {
   title?: string;
 
   /**
-   * @deprecated In v5.x works only with theme version 2.
-   * Color of the tab bar when this tab is active. Only used when `shifting` is `true`.
-   */
-  tabBarColor?: string;
-
-  /**
    * Label text of the tab displayed in the navigation bar. When undefined, scene title is used.
    */
   tabBarLabel?: string;

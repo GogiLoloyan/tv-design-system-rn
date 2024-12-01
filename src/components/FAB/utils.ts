@@ -167,26 +167,24 @@ const getBackgroundColor = ({
     return customBackgroundColor;
   }
 
-  if (theme.isV3) {
-    if (disabled) {
-      return theme.colors.surfaceDisabled;
-    }
+  if (disabled) {
+    return theme.colors.surfaceDisabled;
+  }
 
-    if (isVariant('primary')) {
-      return theme.colors.primaryContainer;
-    }
+  if (isVariant('primary')) {
+    return theme.colors.primaryContainer;
+  }
 
-    if (isVariant('secondary')) {
-      return theme.colors.secondaryContainer;
-    }
+  if (isVariant('secondary')) {
+    return theme.colors.secondaryContainer;
+  }
 
-    if (isVariant('tertiary')) {
-      return theme.colors.tertiaryContainer;
-    }
+  if (isVariant('tertiary')) {
+    return theme.colors.tertiaryContainer;
+  }
 
-    if (isVariant('surface')) {
-      return theme.colors.elevation.level3;
-    }
+  if (isVariant('surface')) {
+    return theme.colors.elevation.level3;
   }
 
   if (disabled) {
@@ -211,26 +209,24 @@ const getForegroundColor = ({
     return customColor;
   }
 
-  if (theme.isV3) {
-    if (disabled) {
-      return theme.colors.onSurfaceDisabled;
-    }
+  if (disabled) {
+    return theme.colors.onSurfaceDisabled;
+  }
 
-    if (isVariant('primary')) {
-      return theme.colors.onPrimaryContainer;
-    }
+  if (isVariant('primary')) {
+    return theme.colors.onPrimaryContainer;
+  }
 
-    if (isVariant('secondary')) {
-      return theme.colors.onSecondaryContainer;
-    }
+  if (isVariant('secondary')) {
+    return theme.colors.onSecondaryContainer;
+  }
 
-    if (isVariant('tertiary')) {
-      return theme.colors.onTertiaryContainer;
-    }
+  if (isVariant('tertiary')) {
+    return theme.colors.onTertiaryContainer;
+  }
 
-    if (isVariant('surface')) {
-      return theme.colors.primary;
-    }
+  if (isVariant('surface')) {
+    return theme.colors.primary;
   }
 
   if (disabled) {
@@ -292,15 +288,7 @@ export const getFABColors = ({
 };
 
 const getLabelColor = ({ theme }: { theme: InternalTheme }) => {
-  if (theme.isV3) {
-    return theme.colors.onSurface;
-  }
-
-  if (theme.dark) {
-    return theme.colors.text;
-  }
-
-  return color(theme.colors.text).fade(0.54).rgb().string();
+  return theme.colors.onSurface;
 };
 
 const getBackdropColor = ({
@@ -313,17 +301,11 @@ const getBackdropColor = ({
   if (customBackdropColor) {
     return customBackdropColor;
   }
-  if (theme.isV3) {
-    return color(theme.colors.background).alpha(0.95).rgb().string();
-  }
-  return theme.colors?.backdrop;
+  return color(theme.colors.background).alpha(0.95).rgb().string();
 };
 
 const getStackedFABBackgroundColor = ({ theme }: { theme: InternalTheme }) => {
-  if (theme.isV3) {
-    return theme.colors.elevation.level3;
-  }
-  return theme.colors.surface;
+  return theme.colors.elevation.level3;
 };
 
 export const getFABGroupColors = ({
@@ -348,17 +330,12 @@ const standardSize = {
 const smallSize = {
   height: 40,
   width: 40,
-  borderRadius: 28,
 };
-const v3SmallSize = {
-  height: 40,
-  width: 40,
-};
-const v3MediumSize = {
+const mediumSize = {
   height: 56,
   width: 56,
 };
-const v3LargeSize = {
+const largeSize = {
   height: 96,
   width: 96,
 };
@@ -378,37 +355,28 @@ export const getFabStyle = ({
   size: 'small' | 'medium' | 'large';
   theme: InternalTheme;
 }) => {
-  const { isV3, roundness } = theme;
+  const { roundness } = theme;
 
   if (customSize) return getCustomFabSize(customSize, roundness);
 
-  if (isV3) {
-    switch (size) {
-      case 'small':
-        return { ...v3SmallSize, borderRadius: 3 * roundness };
-      case 'medium':
-        return { ...v3MediumSize, borderRadius: 4 * roundness };
-      case 'large':
-        return { ...v3LargeSize, borderRadius: 7 * roundness };
-    }
+  switch (size) {
+    case 'small':
+      return { ...smallSize, borderRadius: 3 * roundness };
+    case 'medium':
+      return { ...mediumSize, borderRadius: 4 * roundness };
+    case 'large':
+      return { ...largeSize, borderRadius: 7 * roundness };
+    default:
+      return standardSize;
   }
-
-  if (size === 'small') {
-    return smallSize;
-  }
-  return standardSize;
 };
 
 const extended = {
-  height: 48,
-  paddingHorizontal: 16,
-};
-
-const v3Extended = {
   height: 56,
   borderRadius: 16,
   paddingHorizontal: 16,
 };
+
 
 const getExtendedFabDimensions = (customSize: number) => ({
   height: customSize,
@@ -417,14 +385,10 @@ const getExtendedFabDimensions = (customSize: number) => ({
 
 export const getExtendedFabStyle = ({
   customSize,
-  theme,
 }: {
   customSize?: number;
-  theme: InternalTheme;
 }) => {
   if (customSize) return getExtendedFabDimensions(customSize);
 
-  const { isV3 } = theme;
-
-  return isV3 ? v3Extended : extended;
+  return extended;
 };

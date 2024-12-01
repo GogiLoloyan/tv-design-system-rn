@@ -55,10 +55,6 @@ const themeColors = {
         backgroundColor: 'theme.colors.primary',
         textColor: 'theme.colors.onPrimary',
       },
-      'contained-tonal': {
-        backgroundColor: 'theme.colors.secondaryContainer',
-        textColor: 'theme.colors.onSecondaryContainer',
-      },
       outlined: {
         textColor: 'theme.colors.primary',
         borderColor: 'theme.colors.outline',
@@ -73,10 +69,6 @@ const themeColors = {
         textColor: 'theme.colors.onSurfaceDisabled',
       },
       contained: {
-        backgroundColor: 'theme.colors.surfaceDisabled',
-        textColor: 'theme.colors.onSurfaceDisabled',
-      },
-      'contained-tonal': {
         backgroundColor: 'theme.colors.surfaceDisabled',
         textColor: 'theme.colors.onSurfaceDisabled',
       },
@@ -214,10 +206,6 @@ const themeColors = {
         backgroundColor: 'theme.colors.primary',
         iconColor: 'theme.colors.onPrimary',
       },
-      'contained-tonal': {
-        backgroundColor: 'theme.colors.secondaryContainer',
-        iconColor: 'theme.colors.onSecondaryContainer',
-      },
     },
     unselected: {
       default: {
@@ -231,10 +219,6 @@ const themeColors = {
         backgroundColor: 'theme.colors.surfaceVariant',
         iconColor: 'theme.colors.primary',
       },
-      'contained-tonal': {
-        backgroundColor: 'theme.colors.surfaceVariant',
-        iconColor: 'theme.colors.onSurfaceVariant',
-      },
     },
     disabled: {
       default: {
@@ -246,10 +230,6 @@ const themeColors = {
         borderColor: 'theme.colors.surfaceDisabled',
       },
       contained: {
-        backgroundColor: 'theme.colors.surfaceDisabled',
-        iconColor: 'theme.colors.onSurfaceDisabled',
-      },
-      'contained-tonal': {
         backgroundColor: 'theme.colors.surfaceDisabled',
         iconColor: 'theme.colors.onSurfaceDisabled',
       },

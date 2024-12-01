@@ -11,6 +11,7 @@ import {
   TextStyle,
   View,
   ViewStyle,
+  TVFocusGuideView,
 } from 'react-native';
 
 import color from 'color';
@@ -34,13 +35,12 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    * - `outlined` - button with an outline without background, typically used for important, but not primary action – represents medium emphasis.
    * - `contained` - button with a background color, used for important action, have the most visual impact and high emphasis.
    * - `elevated` - button with a background color and elevation, used when absolutely necessary e.g. button requires visual separation from a patterned background. @supported Available in v5.x with theme version 3
-   * - `contained-tonal` - button with a secondary background color, an alternative middle ground between contained and outlined buttons. @supported Available in v5.x with theme version 3
    */
-  mode?: 'text' | 'outlined' | 'contained' | 'elevated' | 'contained-tonal';
+  mode?: 'text' | 'outlined' | 'contained' | 'elevated';
   /**
    * Whether the color is a dark color. A dark button will render light text and vice-versa. Only applicable for:
    *  * `contained` mode for theme version 2
-   *  * `contained`, `contained-tonal` and `elevated` modes for theme version 3.
+   *  * `contained` and `elevated` modes for theme version 3.
    */
   dark?: boolean;
   /**
@@ -207,8 +207,8 @@ const Button = (
     },
     [mode]
   );
-  const { roundness, isV3, animation } = theme;
-  const uppercase = uppercaseProp ?? !theme.isV3;
+  const { roundness, animation } = theme;
+  const uppercase = uppercaseProp ?? false;
 
   const hasPassedTouchHandler = hasTouchHandler({
     onPress,
@@ -217,10 +217,9 @@ const Button = (
     onLongPress,
   });
 
-  const isElevationEntitled =
-    !disabled && (isV3 ? isMode('elevated') : isMode('contained'));
-  const initialElevation = isV3 ? 1 : 2;
-  const activeElevation = isV3 ? 2 : 8;
+  const isElevationEntitled = !disabled && isMode('elevated');
+  const initialElevation = 1;
+  const activeElevation = 2;
 
   const { current: elevation } = React.useRef<Animated.Value>(
     new Animated.Value(isElevationEntitled ? initialElevation : 0)
@@ -232,7 +231,7 @@ const Button = (
 
   const handlePressIn = (e: GestureResponderEvent) => {
     onPressIn?.(e);
-    if (isV3 ? isMode('elevated') : isMode('contained')) {
+    if (isMode('elevated')) {
       const { scale } = animation;
       Animated.timing(elevation, {
         toValue: activeElevation,
@@ -246,7 +245,7 @@ const Button = (
 
   const handlePressOut = (e: GestureResponderEvent) => {
     onPressOut?.(e);
-    if (isV3 ? isMode('elevated') : isMode('contained')) {
+    if (isMode('elevated')) {
       const { scale } = animation;
       Animated.timing(elevation, {
         toValue: initialElevation,
@@ -264,8 +263,8 @@ const Button = (
     (style) => style.startsWith('border') && style.endsWith('Radius')
   );
 
-  const borderRadius = (isV3 ? 5 : 1) * roundness;
-  const iconSize = isV3 ? 18 : 16;
+  const borderRadius = 5 * roundness;
+  const iconSize = 18;
 
   const { backgroundColor, borderColor, textColor, borderWidth } =
     getButtonColors({
@@ -295,7 +294,7 @@ const Button = (
   const { color: customLabelColor, fontSize: customLabelSize } =
     StyleSheet.flatten(labelStyle) || {};
 
-  const font = isV3 ? theme.fonts.labelLarge : theme.fonts.medium;
+  const font = theme.fonts.labelLarge;
 
   const textStyle = {
     color: textColor,
@@ -306,17 +305,14 @@ const Button = (
     StyleSheet.flatten(contentStyle)?.flexDirection === 'row-reverse'
       ? [
           styles.iconReverse,
-          isV3 && styles[`md3IconReverse${compact ? 'Compact' : ''}`],
-          isV3 &&
-            isMode('text') &&
-            styles[`md3IconReverseTextMode${compact ? 'Compact' : ''}`],
+          compact && styles.iconReverseCompact,
+          isMode('text') &&
+            styles[`iconReverseTextMode${compact ? 'Compact' : ''}`],
         ]
       : [
           styles.icon,
-          isV3 && styles[`md3Icon${compact ? 'Compact' : ''}`],
-          isV3 &&
-            isMode('text') &&
-            styles[`md3IconTextMode${compact ? 'Compact' : ''}`],
+          compact && styles.iconCompact,
+          isMode('text') && styles[`iconTextMode${compact ? 'Compact' : ''}`],
         ];
 
   return (
@@ -330,12 +326,11 @@ const Button = (
           compact && styles.compact,
           buttonStyle,
           style,
-          !isV3 && !disabled && { elevation },
-        ] as ViewStyle
+        ] as StyleProp<ViewStyle>
       }
-      {...(isV3 && { elevation: elevation })}
+      elevation={elevation}
     >
-      <TouchableRipple
+      {/* <TouchableRipple
         borderless
         background={background}
         onPress={onPress}
@@ -344,67 +339,59 @@ const Button = (
         onPressOut={hasPassedTouchHandler ? handlePressOut : undefined}
         delayLongPress={delayLongPress}
         accessibilityLabel={accessibilityLabel}
-        accessibilityHint={accessibilityHint}
-        accessibilityRole={accessibilityRole}
-        accessibilityState={{ disabled }}
-        accessible={accessible}
-        disabled={disabled}
-        rippleColor={rippleColor}
         style={touchableStyle}
         testID={testID}
         theme={theme}
         ref={touchableRef}
-      >
-        <View style={[styles.content, contentStyle]}>
-          {icon && loading !== true ? (
-            <View style={iconStyle} testID={`${testID}-icon-container`}>
-              <Icon
-                source={icon}
-                size={customLabelSize ?? iconSize}
-                color={
-                  typeof customLabelColor === 'string'
-                    ? customLabelColor
-                    : textColor
-                }
-              />
-            </View>
-          ) : null}
-          {loading ? (
-            <ActivityIndicator
+      > */}
+      <View style={[styles.content, contentStyle]}>
+        {/* {icon && loading !== true ? (
+          <View style={iconStyle} testID={`${testID}-icon-container`}>
+            <Icon
+              source={icon}
               size={customLabelSize ?? iconSize}
               color={
                 typeof customLabelColor === 'string'
                   ? customLabelColor
                   : textColor
               }
-              style={iconStyle}
             />
-          ) : null}
-          <Text
-            variant="labelLarge"
-            selectable={false}
-            numberOfLines={1}
-            testID={`${testID}-text`}
-            style={[
-              styles.label,
-              !isV3 && styles.md2Label,
-              isV3 &&
-                (isMode('text')
-                  ? icon || loading
-                    ? styles.md3LabelTextAddons
-                    : styles.md3LabelText
-                  : styles.md3Label),
-              compact && styles.compactLabel,
-              uppercase && styles.uppercaseLabel,
-              textStyle,
-              labelStyle,
-            ]}
-            maxFontSizeMultiplier={maxFontSizeMultiplier}
-          >
-            {children}
-          </Text>
-        </View>
-      </TouchableRipple>
+          </View>
+        ) : null} */}
+        {/* {loading ? (
+          <ActivityIndicator
+            size={customLabelSize ?? iconSize}
+            color={
+              typeof customLabelColor === 'string'
+                ? customLabelColor
+                : textColor
+            }
+            style={iconStyle}
+          />
+        ) : null} */}
+        {/* <Text
+          variant="labelLarge"
+          selectable={false}
+          numberOfLines={1}
+          testID={`${testID}-text`}
+          style={[
+            styles.label,
+            isMode('text')
+              ? icon || loading
+                ? styles.labelTextAddons
+                : styles.labelText
+              : styles.md3Label,
+            compact && styles.compactLabel,
+            uppercase && styles.uppercaseLabel,
+            textStyle,
+            labelStyle,
+          ]}
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
+        >
+          {children}
+        </Text> */}
+      </View>
+      {/* </TouchableRipple> */}
     </Surface>
   );
 };
@@ -423,54 +410,42 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   icon: {
-    marginLeft: 12,
-    marginRight: -4,
-  },
-  iconReverse: {
-    marginRight: 12,
-    marginLeft: -4,
-  },
-  /* eslint-disable react-native/no-unused-styles */
-  md3Icon: {
     marginLeft: 16,
     marginRight: -16,
   },
-  md3IconCompact: {
-    marginLeft: 8,
-    marginRight: 0,
-  },
-  md3IconReverse: {
+  iconReverse: {
     marginLeft: -16,
     marginRight: 16,
   },
-  md3IconReverseCompact: {
+  iconCompact: {
+    marginLeft: 8,
+    marginRight: 0,
+  },
+  iconReverseCompact: {
     marginLeft: 0,
     marginRight: 8,
   },
-  md3IconTextMode: {
+  /* eslint-disable react-native/no-unused-styles */
+  iconTextMode: {
     marginLeft: 12,
     marginRight: -8,
   },
-  md3IconTextModeCompact: {
+  iconTextModeCompact: {
     marginLeft: 6,
     marginRight: 0,
   },
-  md3IconReverseTextMode: {
+  iconReverseTextMode: {
     marginLeft: -8,
     marginRight: 12,
   },
-  md3IconReverseTextModeCompact: {
+  iconReverseTextModeCompact: {
     marginLeft: 0,
     marginRight: 6,
   },
-  /* eslint-enable react-native/no-unused-styles */
   label: {
     textAlign: 'center',
     marginVertical: 9,
     marginHorizontal: 16,
-  },
-  md2Label: {
-    letterSpacing: 1,
   },
   compactLabel: {
     marginHorizontal: 8,
@@ -482,10 +457,10 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 24,
   },
-  md3LabelText: {
+  labelText: {
     marginHorizontal: 12,
   },
-  md3LabelTextAddons: {
+  labelTextAddons: {
     marginHorizontal: 16,
   },
 });

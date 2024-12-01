@@ -15,9 +15,9 @@ exports[`renders segmented button 1`] = `
     style={
       [
         {
-          "backgroundColor": "rgba(232, 222, 248, 1)",
+          "backgroundColor": "rgba(194, 231, 255, 1)",
           "borderBottomRightRadius": 0,
-          "borderColor": "rgba(121, 116, 126, 1)",
+          "borderColor": "rgba(116, 119, 117, 1)",
           "borderRadius": 20,
           "borderRightWidth": 0,
           "borderTopRightRadius": 0,
@@ -121,7 +121,7 @@ exports[`renders segmented button 1`] = `
                     "textAlign": "center",
                   },
                   {
-                    "color": "rgba(29, 25, 43, 1)",
+                    "color": "rgba(0, 29, 53, 1)",
                     "fontFamily": "System",
                     "fontSize": 14,
                     "fontWeight": "500",
@@ -144,7 +144,7 @@ exports[`renders segmented button 1`] = `
         {
           "backgroundColor": "transparent",
           "borderBottomLeftRadius": 0,
-          "borderColor": "rgba(121, 116, 126, 1)",
+          "borderColor": "rgba(116, 119, 117, 1)",
           "borderRadius": 20,
           "borderTopLeftRadius": 0,
           "borderWidth": 1,

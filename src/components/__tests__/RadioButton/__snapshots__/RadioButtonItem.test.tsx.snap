@@ -115,7 +115,7 @@ exports[`can render leading radio button control 1`] = `
           style={
             [
               {
-                "color": "rgba(103, 80, 164, 1)",
+                "color": "rgba(11, 87, 208, 1)",
                 "fontSize": 24,
               },
               [
@@ -167,7 +167,6 @@ exports[`can render leading radio button control 1`] = `
                 "flexGrow": 1,
                 "flexShrink": 1,
               },
-              false,
               {
                 "color": "rgba(28, 27, 31, 1)",
                 "textAlign": "right",
@@ -262,7 +261,6 @@ exports[`can render the Android radio button on different platforms 1`] = `
                 "flexGrow": 1,
                 "flexShrink": 1,
               },
-              false,
               {
                 "color": "rgba(28, 27, 31, 1)",
                 "textAlign": "left",
@@ -322,7 +320,7 @@ exports[`can render the Android radio button on different platforms 1`] = `
         collapsable={false}
         style={
           {
-            "borderColor": "rgba(73, 69, 79, 1)",
+            "borderColor": "rgba(68, 71, 70, 1)",
             "borderRadius": 10,
             "borderWidth": 2,
             "height": 20,
@@ -414,7 +412,6 @@ exports[`can render the iOS radio button on different platforms 1`] = `
                 "flexGrow": 1,
                 "flexShrink": 1,
               },
-              false,
               {
                 "color": "rgba(28, 27, 31, 1)",
                 "textAlign": "left",
@@ -487,7 +484,7 @@ exports[`can render the iOS radio button on different platforms 1`] = `
           style={
             [
               {
-                "color": "rgba(103, 80, 164, 1)",
+                "color": "rgba(11, 87, 208, 1)",
                 "fontSize": 24,
               },
               [
@@ -598,7 +595,6 @@ exports[`renders unchecked 1`] = `
                 "flexGrow": 1,
                 "flexShrink": 1,
               },
-              false,
               {
                 "color": "rgba(28, 27, 31, 1)",
                 "textAlign": "left",
@@ -671,7 +667,7 @@ exports[`renders unchecked 1`] = `
           style={
             [
               {
-                "color": "rgba(103, 80, 164, 1)",
+                "color": "rgba(11, 87, 208, 1)",
                 "fontSize": 24,
               },
               [

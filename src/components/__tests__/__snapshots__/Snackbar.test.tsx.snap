@@ -434,14 +434,13 @@ exports[`renders snackbar with action button 1`] = `
                             "marginVertical": 9,
                             "textAlign": "center",
                           },
-                          false,
                           {
                             "marginHorizontal": 12,
                           },
-                          false,
+                          undefined,
                           false,
                           {
-                            "color": "rgba(208, 188, 255, 1)",
+                            "color": "rgba(168, 199, 250, 1)",
                             "fontFamily": "System",
                             "fontSize": 14,
                             "fontWeight": "500",

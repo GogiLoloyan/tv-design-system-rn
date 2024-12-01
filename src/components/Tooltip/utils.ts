@@ -112,13 +112,11 @@ const getChildrenMeasures = (
 
 export const getTooltipPosition = (
   { children, tooltip, measured }: Measurement,
-  component: React.ReactElement<{
-    style: ViewStyle | Array<ViewStyle> | undefined | null;
-  }>
+  component?: any
 ): {} | { left: number; top: number } => {
   if (!measured) return {};
   let measures = children;
-  if (component.props.style) {
+  if (component?.props.style) {
     measures = getChildrenMeasures(component.props.style, children);
   }
 

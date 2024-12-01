@@ -11,7 +11,6 @@ export const MD3DarkTheme: MD3Theme = {
   dark: true,
   mode: 'adaptive',
   version: 3,
-  isV3: true,
   colors: {
     primary: palette.primary80,
     primaryContainer: palette.primary30,

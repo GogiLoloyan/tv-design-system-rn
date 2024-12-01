@@ -107,29 +107,6 @@ describe('getIconButtonColor - icon color', () => {
     });
   });
 
-  it('should return theme icon color, for theme version 3, mode contained-tonal', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(),
-        mode: 'contained-tonal',
-      })
-    ).toMatchObject({
-      iconColor: getTheme().colors.onSurfaceVariant,
-    });
-  });
-
-  it('should return theme icon color, for theme version 3, mode contained-tonal, selected', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(),
-        mode: 'contained-tonal',
-        selected: true,
-      })
-    ).toMatchObject({
-      iconColor: getTheme().colors.onSecondaryContainer,
-    });
-  });
-
   it('should return theme icon color, for theme version 3, mode outlined', () => {
     expect(
       getIconButtonColor({
@@ -173,16 +150,6 @@ describe('getIconButtonColor - icon color', () => {
       iconColor: getTheme().colors.primary,
     });
   });
-
-  it('should return theme icon color, for theme version 2', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(false, false),
-      })
-    ).toMatchObject({
-      iconColor: getTheme(false, false).colors.text,
-    });
-  });
 });
 
 describe('getIconButtonColor - background color', () => {
@@ -197,7 +164,7 @@ describe('getIconButtonColor - background color', () => {
     });
   });
 
-  (['contained', 'contained-tonal'] as const).forEach((mode) =>
+  (['contained'] as const).forEach((mode) =>
     it(`should return correct disabled color, for theme version 3, ${mode} mode`, () => {
       expect(
         getIconButtonColor({
@@ -229,29 +196,6 @@ describe('getIconButtonColor - background color', () => {
       })
     ).toMatchObject({
       backgroundColor: getTheme().colors.primary,
-    });
-  });
-
-  it('should return theme icon color, for theme version 3, mode contained-tonal', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(),
-        mode: 'contained-tonal',
-      })
-    ).toMatchObject({
-      backgroundColor: getTheme().colors.surfaceVariant,
-    });
-  });
-
-  it('should return theme icon color, for theme version 3, mode contained-tonal, selected', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(),
-        mode: 'contained-tonal',
-        selected: true,
-      })
-    ).toMatchObject({
-      backgroundColor: getTheme().colors.secondaryContainer,
     });
   });
 
@@ -299,16 +243,6 @@ describe('getIconButtonColor - border color', () => {
       borderColor: getTheme().colors.outline,
     });
   });
-
-  it('should return undefined, for theme version 2', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(false, false),
-      })
-    ).toMatchObject({
-      borderColor: undefined,
-    });
-  });
 });
 
 describe('getIconButtonColor - ripple color', () => {
@@ -320,19 +254,6 @@ describe('getIconButtonColor - ripple color', () => {
     ).toMatchObject({
       rippleColor: color(getTheme().colors.onSurfaceVariant)
         .alpha(0.12)
-        .rgb()
-        .string(),
-    });
-  });
-
-  it('should return theme color, for theme version 2', () => {
-    expect(
-      getIconButtonColor({
-        theme: getTheme(false, false),
-      })
-    ).toMatchObject({
-      rippleColor: color(getTheme(false, false).colors.text)
-        .alpha(0.32)
         .rgb()
         .string(),
     });

@@ -6,7 +6,7 @@ import type {
   AnimatedFABAnimateFrom,
   AnimatedFABIconMode,
 } from 'react-native-paper';
-import { Paragraph, RadioButton, Text } from 'react-native-paper';
+import { RadioButton, Text } from 'react-native-paper';
 
 import { useExampleTheme } from '../..';
 
@@ -40,11 +40,9 @@ const CustomControl = ({
   value,
   onChange,
 }: CustomControlProps) => {
-  const { isV3 } = useExampleTheme();
-
   const _renderItem = React.useCallback(
     ({ item }: ListRenderItemInfo<(typeof options)[number]>) => {
-      const TextComponent = isV3 ? Text : Paragraph;
+      const TextComponent = Text;
 
       return (
         <TouchableOpacity
@@ -61,14 +59,14 @@ const CustomControl = ({
         </TouchableOpacity>
       );
     },
-    [value, onChange, isV3]
+    [value, onChange]
   );
 
   const _keyExtractor = React.useCallback(
     (item: (typeof options)[number]) => item,
     []
   );
-  const TextComponent = isV3 ? Text : Paragraph;
+  const TextComponent = Text;
 
   return (
     <View style={styles.controlWrapper}>

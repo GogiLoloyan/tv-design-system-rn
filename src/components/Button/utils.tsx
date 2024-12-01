@@ -9,8 +9,7 @@ export type ButtonMode =
   | 'text'
   | 'outlined'
   | 'contained'
-  | 'elevated'
-  | 'contained-tonal';
+  | 'elevated';
 
 type BaseProps = {
   isMode: (mode: ButtonMode) => boolean;
@@ -52,37 +51,20 @@ const getButtonBackgroundColor = ({
     return customButtonColor;
   }
 
-  if (theme.isV3) {
-    if (disabled) {
-      if (isMode('outlined') || isMode('text')) {
-        return 'transparent';
-      }
-
-      return theme.colors.surfaceDisabled;
+  if (disabled) {
+    if (isMode('outlined') || isMode('text')) {
+      return 'transparent';
     }
 
-    if (isMode('elevated')) {
-      return theme.colors.elevation.level1;
-    }
+    return theme.colors.surfaceDisabled;
+  }
 
-    if (isMode('contained')) {
-      return theme.colors.primary;
-    }
-
-    if (isMode('contained-tonal')) {
-      return theme.colors.secondaryContainer;
-    }
+  if (isMode('elevated')) {
+    return theme.colors.elevation.level1;
   }
 
   if (isMode('contained')) {
-    if (disabled) {
-      return color(theme.dark ? white : black)
-        .alpha(0.12)
-        .rgb()
-        .string();
-    }
-
-    return theme.colors.primary;
+    return theme.colors.onSurfaceVariant;
   }
 
   return 'transparent';
@@ -104,32 +86,25 @@ const getButtonTextColor = ({
     return customTextColor;
   }
 
-  if (theme.isV3) {
-    if (disabled) {
-      return theme.colors.onSurfaceDisabled;
-    }
+  if (disabled) {
+    return theme.colors.onSurfaceDisabled;
+  }
 
-    if (typeof dark === 'boolean') {
-      if (
-        isMode('contained') ||
-        isMode('contained-tonal') ||
-        isMode('elevated')
-      ) {
-        return isDark({ dark, backgroundColor }) ? white : black;
-      }
+  if (typeof dark === 'boolean') {
+    if (
+      isMode('contained') ||
+      isMode('elevated')
+    ) {
+      return isDark({ dark, backgroundColor }) ? white : black;
     }
+  }
 
-    if (isMode('outlined') || isMode('text') || isMode('elevated')) {
-      return theme.colors.primary;
-    }
+  if (isMode('outlined') || isMode('text') || isMode('elevated')) {
+    return theme.colors.primary;
+  }
 
-    if (isMode('contained')) {
-      return theme.colors.onPrimary;
-    }
-
-    if (isMode('contained-tonal')) {
-      return theme.colors.onSecondaryContainer;
-    }
+  if (isMode('contained')) {
+    return theme.colors.onPrimary;
   }
 
   if (disabled) {
@@ -147,14 +122,12 @@ const getButtonTextColor = ({
 };
 
 const getButtonBorderColor = ({ isMode, disabled, theme }: BaseProps) => {
-  if (theme.isV3) {
-    if (disabled && isMode('outlined')) {
-      return theme.colors.surfaceDisabled;
-    }
+  if (disabled && isMode('outlined')) {
+    return theme.colors.surfaceDisabled;
+  }
 
-    if (isMode('outlined')) {
-      return theme.colors.outline;
-    }
+  if (isMode('outlined')) {
+    return theme.colors.outline;
   }
 
   if (isMode('outlined')) {
@@ -169,12 +142,9 @@ const getButtonBorderColor = ({ isMode, disabled, theme }: BaseProps) => {
 
 const getButtonBorderWidth = ({
   isMode,
-  theme,
 }: Omit<BaseProps, 'disabled'>) => {
-  if (theme.isV3) {
-    if (isMode('outlined')) {
-      return 1;
-    }
+  if (isMode('outlined')) {
+    return 1;
   }
 
   if (isMode('outlined')) {

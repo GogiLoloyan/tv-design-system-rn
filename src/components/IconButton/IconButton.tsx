@@ -21,7 +21,7 @@ import TouchableRipple from '../TouchableRipple/TouchableRipple';
 
 const PADDING = 8;
 
-type IconButtonMode = 'outlined' | 'contained' | 'contained-tonal';
+type IconButtonMode = 'outlined' | 'contained';
 
 export type Props = $RemoveChildren<typeof TouchableRipple> & {
   /**
@@ -132,7 +132,6 @@ const IconButton = forwardRef<View, Props>(
     ref
   ) => {
     const theme = useInternalTheme(themeOverrides);
-    const { isV3 } = theme;
 
     const IconComponent = animated ? CrossFadeIcon : Icon;
 
@@ -147,10 +146,10 @@ const IconButton = forwardRef<View, Props>(
         customRippleColor,
       });
 
-    const buttonSize = isV3 ? size + 2 * PADDING : size * 1.5;
+    const buttonSize = size + 2 * PADDING;
 
     const {
-      borderWidth = isV3 && mode === 'outlined' && !selected ? 1 : 0,
+      borderWidth = mode === 'outlined' && !selected ? 1 : 0,
       borderRadius = buttonSize / 2,
     } = (StyleSheet.flatten(style) || {}) as ViewStyle;
 
@@ -172,10 +171,9 @@ const IconButton = forwardRef<View, Props>(
           },
           styles.container,
           borderStyles,
-          !isV3 && disabled && styles.disabled,
           style,
         ]}
-        {...(isV3 && { elevation: 0 })}
+        elevation={0}
       >
         <TouchableRipple
           borderless

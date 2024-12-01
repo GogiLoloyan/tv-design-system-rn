@@ -11,22 +11,6 @@ But how to make them work together?
 
 ## Themes adaptation
 
-### Material Design 2
-
-Fortunately, in Material Design 2, both React Navigation and React Native Paper offer very similar API when it comes to theming and theme color structure. It's possible to import them in light and dark variants from both.
-
-```js
-import {
-  DarkTheme as NavigationDarkTheme,
-  DefaultTheme as NavigationDefaultTheme,
-} from '@react-navigation/native';
-
-import {
-  MD2LightTheme,
-  MD2DarkTheme,
-} from 'react-native-paper';
-```
-
 ### Material Design 3
 
 From v5, React Native Paper theme colors structure is following the Material Design 3 <i>(known as Material You)</i> colors system, which differs significantly from both previous Paper's theme and React Navigation theme. 
@@ -127,24 +111,6 @@ To make things easier we can use [deepmerge](https://www.npmjs.com/package/deepm
 npm install deepmerge
 ```
 
-### Material Design 2
-
-```js
-import {
-  NavigationContainer,
-  DarkTheme as NavigationDarkTheme,
-  DefaultTheme as NavigationDefaultTheme,
-} from '@react-navigation/native';
-import {
-  MD2DarkTheme,
-  MD2LightTheme,
-} from 'react-native-paper';
-import merge from 'deepmerge';
-
-const CombinedDefaultTheme = merge(MD2LightTheme, NavigationDefaultTheme);
-const CombinedDarkTheme = merge(MD2DarkTheme, NavigationDarkTheme);
-```
-
 ### Material Design 3
 
 ```js
@@ -170,27 +136,6 @@ const CombinedDarkTheme = merge(MD3DarkTheme, DarkTheme);
 ```
 
 Alternatively, we could merge those themes using vanilla JavaScript:
-
-### Material Design 2
-
-```js
-const CombinedDefaultTheme = {
-  ...MD2LightTheme,
-  ...NavigationDefaultTheme,
-  colors: {
-    ...MD2LightTheme.colors,
-    ...NavigationDefaultTheme.colors,
-  },
-};
-const CombinedDarkTheme = {
-  ...MD2DarkTheme,
-  ...NavigationDarkTheme,
-  colors: {
-    ...MD2DarkTheme.colors,
-    ...NavigationDarkTheme.colors,
-  },
-};
-```
 
 ### Material Design 3
 

@@ -99,7 +99,7 @@ exports[`renders expanded accordion 1`] = `
                     "fontSize": 16,
                   },
                   {
-                    "color": "rgba(103, 80, 164, 1)",
+                    "color": "rgba(11, 87, 208, 1)",
                   },
                   undefined,
                 ],
@@ -113,8 +113,7 @@ exports[`renders expanded accordion 1`] = `
           style={
             [
               {
-                "marginVertical": 6,
-                "paddingLeft": 8,
+                "paddingLeft": 16,
               },
               undefined,
             ]
@@ -129,7 +128,7 @@ exports[`renders expanded accordion 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -355,7 +354,7 @@ exports[`renders list accordion with children 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -432,8 +431,7 @@ exports[`renders list accordion with children 1`] = `
           style={
             [
               {
-                "marginVertical": 6,
-                "paddingLeft": 8,
+                "paddingLeft": 16,
               },
               undefined,
             ]
@@ -448,7 +446,7 @@ exports[`renders list accordion with children 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -615,7 +613,7 @@ exports[`renders list accordion with custom title and description styles 1`] = `
                     "fontSize": 14,
                   },
                   {
-                    "color": "rgba(73, 69, 79, 1)",
+                    "color": "rgba(68, 71, 70, 1)",
                   },
                   {
                     "color": "#f44336",
@@ -631,8 +629,7 @@ exports[`renders list accordion with custom title and description styles 1`] = `
           style={
             [
               {
-                "marginVertical": 6,
-                "paddingLeft": 8,
+                "paddingLeft": 16,
               },
               {
                 "alignItems": "center",
@@ -651,7 +648,7 @@ exports[`renders list accordion with custom title and description styles 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -775,7 +772,7 @@ exports[`renders list accordion with left items 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -852,8 +849,7 @@ exports[`renders list accordion with left items 1`] = `
           style={
             [
               {
-                "marginVertical": 6,
-                "paddingLeft": 8,
+                "paddingLeft": 16,
               },
               undefined,
             ]
@@ -868,7 +864,7 @@ exports[`renders list accordion with left items 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [
@@ -1033,7 +1029,7 @@ exports[`renders multiline list accordion 1`] = `
                     "fontSize": 14,
                   },
                   {
-                    "color": "rgba(73, 69, 79, 1)",
+                    "color": "rgba(68, 71, 70, 1)",
                   },
                   undefined,
                 ],
@@ -1047,8 +1043,7 @@ exports[`renders multiline list accordion 1`] = `
           style={
             [
               {
-                "marginVertical": 6,
-                "paddingLeft": 8,
+                "paddingLeft": 16,
               },
               {
                 "alignItems": "center",
@@ -1067,7 +1062,7 @@ exports[`renders multiline list accordion 1`] = `
             style={
               [
                 {
-                  "color": "rgba(73, 69, 79, 1)",
+                  "color": "rgba(68, 71, 70, 1)",
                   "fontSize": 24,
                 },
                 [

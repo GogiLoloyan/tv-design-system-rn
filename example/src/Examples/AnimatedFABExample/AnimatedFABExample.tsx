@@ -2,13 +2,7 @@ import * as React from 'react';
 import type { NativeScrollEvent, NativeSyntheticEvent } from 'react-native';
 import { Animated, FlatList, Platform, StyleSheet, View } from 'react-native';
 
-import {
-  Avatar,
-  MD2Colors,
-  MD3Colors,
-  Paragraph,
-  Text,
-} from 'react-native-paper';
+import { Avatar, MD3Colors, Text } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import CustomFAB from './CustomFAB';
@@ -32,7 +26,7 @@ type Item = {
 };
 
 const AnimatedFABExample = () => {
-  const { colors, isV3 } = useExampleTheme();
+  const { colors } = useExampleTheme();
 
   const isIOS = Platform.OS === 'ios';
 
@@ -47,14 +41,14 @@ const AnimatedFABExample = () => {
 
   const renderItem = React.useCallback(
     ({ item }: { item: Item }) => {
-      const TextComponent = isV3 ? Text : Paragraph;
+      const TextComponent = Text;
 
       return (
         <View style={styles.itemContainer}>
           <Avatar.Text
             style={[styles.avatar, { backgroundColor: item.bgColor }]}
             label={item.initials}
-            color={isV3 ? MD3Colors.primary100 : MD2Colors.white}
+            color={MD3Colors.primary100}
             size={40}
           />
           <View style={styles.itemTextContentContainer}>
@@ -97,13 +91,7 @@ const AnimatedFABExample = () => {
               <Icon
                 name={item.favorite ? 'star' : 'star-outline'}
                 color={
-                  item.favorite
-                    ? isV3
-                      ? MD3Colors.error70
-                      : MD2Colors.orange500
-                    : isV3
-                    ? MD3Colors.neutralVariant70
-                    : MD2Colors.grey500
+                  item.favorite ? MD3Colors.error70 : MD3Colors.neutralVariant70
                 }
                 size={20}
                 onPress={() => setVisible(!visible)}
@@ -114,7 +102,7 @@ const AnimatedFABExample = () => {
         </View>
       );
     },
-    [visible, isV3]
+    [visible]
   );
 
   const onScroll = ({

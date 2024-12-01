@@ -187,9 +187,7 @@ const Tooltip = ({
             style={[
               styles.tooltip,
               {
-                backgroundColor: theme.isV3
-                  ? theme.colors.onSurface
-                  : theme.colors.tooltip,
+                backgroundColor: theme.colors.onSurface,
                 ...getTooltipPosition(measurement as Measurement, children),
                 borderRadius: theme.roundness,
                 ...(measurement.measured ? styles.visible : styles.hidden),

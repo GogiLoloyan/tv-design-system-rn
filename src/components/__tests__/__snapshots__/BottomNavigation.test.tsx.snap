@@ -170,9 +170,6 @@ exports[`allows customizing Route's type via generics 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -206,7 +203,7 @@ exports[`allows customizing Route's type via generics 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -440,9 +437,6 @@ exports[`allows customizing Route's type via generics 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -584,7 +578,7 @@ exports[`allows customizing Route's type via generics 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -640,7 +634,7 @@ exports[`allows customizing Route's type via generics 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -835,9 +829,6 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -872,7 +863,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -907,7 +898,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -958,7 +949,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1060,9 +1051,6 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -1115,7 +1103,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1166,7 +1154,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1268,9 +1256,6 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -1323,7 +1308,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1374,7 +1359,7 @@ exports[`hides labels in non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1618,9 +1603,6 @@ exports[`hides labels in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -1655,7 +1637,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -1690,7 +1672,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1741,7 +1723,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1843,9 +1825,6 @@ exports[`hides labels in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -1898,7 +1877,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -1949,7 +1928,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2051,9 +2030,6 @@ exports[`hides labels in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -2106,7 +2082,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2157,7 +2133,7 @@ exports[`hides labels in shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2533,9 +2509,6 @@ exports[`renders bottom navigation with getLazy 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -2569,7 +2542,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -2604,7 +2577,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2655,7 +2628,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2877,9 +2850,6 @@ exports[`renders bottom navigation with getLazy 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -2931,7 +2901,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -2982,7 +2952,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3095,7 +3065,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3151,7 +3121,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3204,9 +3174,6 @@ exports[`renders bottom navigation with getLazy 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -3258,7 +3225,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3309,7 +3276,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3422,7 +3389,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3478,7 +3445,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3531,9 +3498,6 @@ exports[`renders bottom navigation with getLazy 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -3585,7 +3549,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3636,7 +3600,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3749,7 +3713,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3805,7 +3769,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -3858,9 +3822,6 @@ exports[`renders bottom navigation with getLazy 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -3912,7 +3873,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -3963,7 +3924,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -4076,7 +4037,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -4132,7 +4093,7 @@ exports[`renders bottom navigation with getLazy 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -4327,9 +4288,6 @@ exports[`renders bottom navigation with scene animation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -4368,7 +4326,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -4403,7 +4361,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -4454,7 +4412,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -4621,9 +4579,6 @@ exports[`renders bottom navigation with scene animation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -4680,7 +4635,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -4731,7 +4686,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -4845,7 +4800,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -4898,9 +4853,6 @@ exports[`renders bottom navigation with scene animation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -4957,7 +4909,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5008,7 +4960,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5122,7 +5074,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -5175,9 +5127,6 @@ exports[`renders bottom navigation with scene animation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -5234,7 +5183,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5285,7 +5234,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5399,7 +5348,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -5452,9 +5401,6 @@ exports[`renders bottom navigation with scene animation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -5511,7 +5457,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5562,7 +5508,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -5676,7 +5622,7 @@ exports[`renders bottom navigation with scene animation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -5871,9 +5817,6 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -5907,7 +5850,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -5934,7 +5877,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -5952,7 +5895,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -6076,9 +6019,6 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -6122,7 +6062,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -6140,7 +6080,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -6202,7 +6142,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 1
                   </text>
@@ -6221,7 +6161,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 1
                   </text>
@@ -6264,9 +6204,6 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -6310,7 +6247,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -6328,7 +6265,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -6390,7 +6327,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 2
                   </text>
@@ -6409,7 +6346,7 @@ exports[`renders custom icon and label in non-shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 2
                   </text>
@@ -6594,9 +6531,6 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -6635,7 +6569,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -6662,7 +6596,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -6680,7 +6614,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -6786,9 +6720,6 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -6837,7 +6768,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -6855,7 +6786,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -6918,7 +6849,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 1
                   </text>
@@ -6961,9 +6892,6 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -7012,7 +6940,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -7030,7 +6958,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -7093,7 +7021,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 2
                   </text>
@@ -7136,9 +7064,6 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -7187,7 +7112,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -7205,7 +7130,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -7268,7 +7193,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 3
                   </text>
@@ -7311,9 +7236,6 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -7362,7 +7284,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(29, 25, 43, 1)"
+                    color="rgba(0, 29, 53, 1)"
                   />
                 </View>
                 <View
@@ -7380,7 +7302,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <icon
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   />
                 </View>
                 <View
@@ -7443,7 +7365,7 @@ exports[`renders custom icon and label in shifting bottom navigation 1`] = `
                   }
                 >
                   <text
-                    color="rgba(73, 69, 79, 1)"
+                    color="rgba(68, 71, 70, 1)"
                   >
                     Route: 4
                   </text>
@@ -7628,9 +7550,6 @@ exports[`renders custom icon and label with custom colors in non-shifting bottom
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -7664,7 +7583,7 @@ exports[`renders custom icon and label with custom colors in non-shifting bottom
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -7972,9 +7891,6 @@ exports[`renders custom icon and label with custom colors in non-shifting bottom
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -8299,9 +8215,6 @@ exports[`renders custom icon and label with custom colors in non-shifting bottom
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -8768,9 +8681,6 @@ exports[`renders custom icon and label with custom colors in shifting bottom nav
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -8809,7 +8719,7 @@ exports[`renders custom icon and label with custom colors in shifting bottom nav
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -9062,9 +8972,6 @@ exports[`renders custom icon and label with custom colors in shifting bottom nav
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -9339,9 +9246,6 @@ exports[`renders custom icon and label with custom colors in shifting bottom nav
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -9758,9 +9662,6 @@ exports[`renders non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -9794,7 +9695,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -9829,7 +9730,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -9880,7 +9781,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -10102,9 +10003,6 @@ exports[`renders non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -10156,7 +10054,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -10207,7 +10105,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -10320,7 +10218,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -10376,7 +10274,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -10429,9 +10327,6 @@ exports[`renders non-shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -10483,7 +10378,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -10534,7 +10429,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -10647,7 +10542,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -10703,7 +10598,7 @@ exports[`renders non-shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -10898,9 +10793,6 @@ exports[`renders shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -10939,7 +10831,7 @@ exports[`renders shifting bottom navigation 1`] = `
                   style={
                     {
                       "alignSelf": "center",
-                      "backgroundColor": "rgba(232, 222, 248, 1)",
+                      "backgroundColor": "rgba(194, 231, 255, 1)",
                       "borderRadius": 16,
                       "height": 32,
                       "transform": [
@@ -10974,7 +10866,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11025,7 +10917,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11192,9 +11084,6 @@ exports[`renders shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -11251,7 +11140,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11302,7 +11191,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11416,7 +11305,7 @@ exports[`renders shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -11469,9 +11358,6 @@ exports[`renders shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -11528,7 +11414,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11579,7 +11465,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11693,7 +11579,7 @@ exports[`renders shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -11746,9 +11632,6 @@ exports[`renders shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -11805,7 +11688,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11856,7 +11739,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -11970,7 +11853,7 @@ exports[`renders shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",
@@ -12023,9 +11906,6 @@ exports[`renders shifting bottom navigation 1`] = `
               [
                 {
                   "flex": 1,
-                  "paddingVertical": 6,
-                },
-                {
                   "paddingVertical": 0,
                 },
               ]
@@ -12082,7 +11962,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(29, 25, 43, 1)",
+                          "color": "rgba(0, 29, 53, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -12133,7 +12013,7 @@ exports[`renders shifting bottom navigation 1`] = `
                     style={
                       [
                         {
-                          "color": "rgba(73, 69, 79, 1)",
+                          "color": "rgba(68, 71, 70, 1)",
                           "fontSize": 24,
                         },
                         [
@@ -12247,7 +12127,7 @@ exports[`renders shifting bottom navigation 1`] = `
                               "textAlign": "center",
                             },
                             {
-                              "color": "rgba(73, 69, 79, 1)",
+                              "color": "rgba(68, 71, 70, 1)",
                               "fontFamily": "System",
                               "fontSize": 12,
                               "fontWeight": "500",

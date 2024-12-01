@@ -64,7 +64,7 @@ exports[`RadioButtonGroup renders properly 1`] = `
         style={
           [
             {
-              "color": "rgba(103, 80, 164, 1)",
+              "color": "rgba(11, 87, 208, 1)",
               "fontSize": 24,
             },
             [
